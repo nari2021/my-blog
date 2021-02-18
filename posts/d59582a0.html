@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?https://nari2021.github.io/"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>开发日志1.0 | ナリのブログへようこそ | 来ぬ人をまつほの浦の夕凪に焼くや藻塩の身もこがれつつ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="开发日志">
+    <meta name="description" content="开发日志1.0历经数小时，经过不断地尝试和实践，终于让这个博客有了自己的雏形，以下记录的是该博客已经实现好的功能和实现过程中的雷区。 博客的搭建主要参考教程是bilibili一个up主的视频(单击此处即可进入)。 博客选择部署在GitHub上面，gitee也可以，而且访问速度会比GitHub快很多，当完成了以上步骤就可以进行主题等操作。 主题的设置本博客采用的主题是indigo主题，在GitHub">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开发日志1.0">
+<meta property="og:url" content="https://nari2021.github.io/my-blog/posts/d59582a0.html">
+<meta property="og:site_name" content="ナリのブログへようこそ">
+<meta property="og:description" content="开发日志1.0历经数小时，经过不断地尝试和实践，终于让这个博客有了自己的雏形，以下记录的是该博客已经实现好的功能和实现过程中的雷区。 博客的搭建主要参考教程是bilibili一个up主的视频(单击此处即可进入)。 博客选择部署在GitHub上面，gitee也可以，而且访问速度会比GitHub快很多，当完成了以上步骤就可以进行主题等操作。 主题的设置本博客采用的主题是indigo主题，在GitHub">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://nari2021.github.io/my-blog/posts/d59582a0/2021218_1.jpg">
+<meta property="og:image" content="https://nari2021.github.io/my-blog/posts/d59582a0/2021218_2.jpg">
+<meta property="og:image" content="https://nari2021.github.io/my-blog/posts/d59582a0/2021218_3.jpg">
+<meta property="og:image" content="https://nari2021.github.io/my-blog/posts/d59582a0/2021218_4.jpg">
+<meta property="article:published_time" content="2021-02-18T13:00:13.000Z">
+<meta property="article:modified_time" content="2021-02-18T15:30:54.059Z">
+<meta property="article:author" content="なりたぁん">
+<meta property="article:tag" content="开发日志">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://nari2021.github.io/my-blog/posts/d59582a0/2021218_1.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="ナリのブログへようこそ" href="/my-blog/atom.xml">
+    
+    <link rel="shortcut icon" href="/my-blog/img/ressapannda.gif">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/my-blog/img/brand.jpg)">
+      <div class="brand">
+        <a href="/my-blog/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/my-blog/img/ressapannda.gif">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">なりたぁん</h5>
+          <a href="mailto:yuhongf@126.com" title="yuhongf@126.com" class="mail">yuhongf@126.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://nari2021.github.io/nari2021.github.io/categories/开发日志-公告/"  >
+                <i class="icon icon-lg icon-terminal"></i>
+                bulletin board
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/nari2021/nari2021.github.io" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/blank" target="_blank" >
+                <i class="icon icon-lg icon-twitter"></i>
+                Twitter
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">开发日志1.0</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">开发日志1.0</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-02-18T13:00:13.000Z" itemprop="datePublished" class="page-time">
+  2021-02-18
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%85%AC%E5%91%8A/">开发日志&公告</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#开发日志1-0"><span class="post-toc-number">1.</span> <span class="post-toc-text">开发日志1.0</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#博客的搭建"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">博客的搭建</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题的设置"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">主题的设置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#实现的一些功能"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">实现的一些功能</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#个人主页"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">个人主页</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#左侧的菜单栏介绍"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">左侧的菜单栏介绍</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#主页"><span class="post-toc-number">1.3.2.1.</span> <span class="post-toc-text">主页</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Archives"><span class="post-toc-number">1.3.2.2.</span> <span class="post-toc-text">Archives</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Tags"><span class="post-toc-number">1.3.2.3.</span> <span class="post-toc-text">Tags</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Categories"><span class="post-toc-number">1.3.2.4.</span> <span class="post-toc-text">Categories</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#bulletin-board"><span class="post-toc-number">1.3.2.5.</span> <span class="post-toc-text">bulletin board</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#GitHub"><span class="post-toc-number">1.3.2.6.</span> <span class="post-toc-text">GitHub</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Twitter"><span class="post-toc-number">1.3.2.7.</span> <span class="post-toc-text">Twitter</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一些小功能"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">一些小功能</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#评论系统"><span class="post-toc-number">1.3.3.1.</span> <span class="post-toc-text">评论系统</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#打赏功能"><span class="post-toc-number">1.3.3.2.</span> <span class="post-toc-text">打赏功能</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#琐碎功能"><span class="post-toc-number">1.3.3.3.</span> <span class="post-toc-text">琐碎功能</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#我学到了什么"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">我学到了什么</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最后"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">最后</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-开发日志1-0"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">开发日志1.0</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-02-18 21:00:13" datetime="2021-02-18T13:00:13.000Z"  itemprop="datePublished">2021-02-18</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%85%AC%E5%91%8A/">开发日志&公告</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="开发日志1-0"><a href="#开发日志1-0" class="headerlink" title="开发日志1.0"></a>开发日志1.0</h1><p>历经数小时，经过不断地尝试和实践，终于让这个博客有了自己的雏形，以下记录的是该博客已经实现好的功能和实现过程中的雷区。</p>
+<h2 id="博客的搭建"><a href="#博客的搭建" class="headerlink" title="博客的搭建"></a>博客的搭建</h2><p>主要参考教程是bilibili一个up主的<a href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.788.videocard.3" target="_blank" rel="noopener">视频</a>(单击此处即可进入)。</p>
+<p>博客选择部署在GitHub上面，gitee也可以，而且访问速度会比GitHub快很多，当完成了以上步骤就可以进行主题等操作。</p>
+<h2 id="主题的设置"><a href="#主题的设置" class="headerlink" title="主题的设置"></a>主题的设置</h2><p>本博客采用的主题是indigo主题，在GitHub上可以进行<a href="https://github.com/yscoder/hexo-theme-indigo/" target="_blank" rel="noopener">下载</a>。并且按照教程进行安装即可，网上的配置方式很多，可以采用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-xxx</span><br></pre></td></tr></table></figure>
+
+<p>上面这个命令格式安装自己想要的插件，比如音乐播放，live2d等。具体可以参考这篇<a href="https://easyhexo.com/3-Plugins-use-and-config/" target="_blank" rel="noopener">文章</a>，里面有一些比较常用的插件。</p>
+<p>如果按照上诉步骤弄完，主要是主题的切换，将根目录下的_config.yml 文件中</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    theme: landscape</span><br><span class="line">change to</span><br><span class="line">    theme: xxxx</span><br></pre></td></tr></table></figure>
+
+<p>然后在根目录下执行启动命令报错的话。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>因为我遇到了这样的坑，且indigo主题的作者已经不再维护这个项目了。在GitHub的issue里面可以看到类似的问题出现，根据描述疑似是win10的个例会掉坑。最后我找到的解决方案是，直接把别人的代码拷贝下来修改yml文件的配置即可。（因为咱也不是很懂具体的内部原理</p>
+<h2 id="实现的一些功能"><a href="#实现的一些功能" class="headerlink" title="实现的一些功能"></a>实现的一些功能</h2><p>包含了博客基本的功能。</p>
+<h3 id="个人主页"><a href="#个人主页" class="headerlink" title="个人主页"></a>个人主页</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/my-blog/posts/d59582a0/2021218_1.jpg" alt title>
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+
+<p>↑这就是大概实现的一个雏形啦~  里面的文章是测试用的文章。具体的一些小功能例如页面的自动收缩，就不详细说了，具体参照indigo的yml文件说明文档。</p>
+<h3 id="左侧的菜单栏介绍"><a href="#左侧的菜单栏介绍" class="headerlink" title="左侧的菜单栏介绍"></a>左侧的菜单栏介绍</h3><p>从上往下分别就是</p>
+<h4 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h4><p>这个就不用多说了吧！</p>
+<h4 id="Archives"><a href="#Archives" class="headerlink" title="Archives"></a>Archives</h4><p>这个的功能是按照日期查看我的博客。</p>
+<h4 id="Tags"><a href="#Tags" class="headerlink" title="Tags"></a>Tags</h4><p>这个的功能是按照标签对博客进行筛选。以后我写的文章里面都会认真进行分类的！</p>
+<h4 id="Categories"><a href="#Categories" class="headerlink" title="Categories"></a>Categories</h4><p>这个的功能是按照分类对博客进行筛选。比如学习类，编程类，生活类。</p>
+<h4 id="bulletin-board"><a href="#bulletin-board" class="headerlink" title="bulletin board"></a>bulletin board</h4><p>这个就是公告栏啦。原计划是定向到 source/categories/..目标文件夹下面的一个分类，这样点击这个菜单选项就可以直接定向到有关于开发日志和公告类的博客了。（但是目前好像出了的差错，计划在后续过程中修复</p>
+<h4 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h4><p>点击后会跳转到我部署在GitHub上的代码<a href="https://github.com/nari2021/nari2021.github.io" target="_blank" rel="noopener">链接</a>。</p>
+<h4 id="Twitter"><a href="#Twitter" class="headerlink" title="Twitter"></a>Twitter</h4><p>什么？你想点进来？你不对劲。目前不开放此功能！</p>
+<h3 id="一些小功能"><a href="#一些小功能" class="headerlink" title="一些小功能"></a>一些小功能</h3><h4 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h4><p>使用的是框架自带的disqus。配置很简单只需要将其属性改成true即可。但是缺点也很明显，首先加载速度很慢，可能需要小飞机的支持。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/my-blog/posts/d59582a0/2021218_2.jpg" alt title>
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+
+<p>如图所示。在文章最底下，可能需要等待一段时间加载。如果加载不出来，点击Reload稍等即可。</p>
+<p>该插件是第三方的应用，所以需要Google/FB/小蓝鸟等账号的登录，需要小飞机。</p>
+<p>评论之后的结果就会像下图一样。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/my-blog/posts/d59582a0/2021218_3.jpg" alt title>
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+
+<h4 id="打赏功能"><a href="#打赏功能" class="headerlink" title="打赏功能"></a>打赏功能</h4><p>如果觉得对你有帮助的话！！！！！！！！！看到文末的小圆圈了吗（</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/my-blog/posts/d59582a0/2021218_4.jpg" alt title>
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+
+<h4 id="琐碎功能"><a href="#琐碎功能" class="headerlink" title="琐碎功能"></a>琐碎功能</h4><p>包含了访客数统计(修改配置文件)，目录导航，文章分享，站内搜索，单篇文章访问数量等功能。</p>
+<h2 id="我学到了什么"><a href="#我学到了什么" class="headerlink" title="我学到了什么"></a>我学到了什么</h2><p>引用一句谚语：石の上にも三年。有志者事竟成。</p>
+<p>在教程的帮助下，虽然可以很快的以一种很简单的方式，跳过了其原理搭建出一个自己的blog，不过在此期间是有很多不通顺的地方的。正是这些地方能学习到很多东西，比如markdown文件的语法，yml文件的语法，html文件的语法，各项配置，导入，部署。只有真正做过一次才能体会到最后成功的喜悦。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>这算是我的第一篇文章，可能会有很多没做好的地方。会在未来很长的一段时间内，不断地学习相关知识并优化该网站。</p>
+<p>文章的数量应该也会随着时间慢慢堆积。我会在这里存放我的学习、生活、社交、对事物的思考以及一些琐碎的文章，有助于未来的我，在回首今天写下这第一篇文章时，不忘当初的初心。</p>
+<p>非常感谢你能够阅读到这里！！！！！</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2021-02-18T15:30:54.059Z" itemprop="dateUpdated">2021-02-18 23:30:54</time>
+</span><br>
+
+
+        
+        本文永久链接：<a href="/my-blog/posts/d59582a0.html" target="_blank" rel="external">https://nari2021.github.io/my-blog/posts/d59582a0.html</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://nari2021.github.io/my-blog">
+            <img src="/my-blog/img/ressapannda.gif" alt="なりたぁん">
+            なりたぁん
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" rel="tag">开发日志</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/d59582a0.html&title=《开发日志1.0》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/d59582a0.html&title=《开发日志1.0》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/d59582a0.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《开发日志1.0》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/d59582a0.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/d59582a0.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var id = location.pathname
+        if (location.pathname.length > 50) {
+          id = location.pathname.replace(/\/\d+\/\d+\/\d+\//, '').replace('/', '').substring(0, 50)
+        }
+        const gitalk = new Gitalk({
+          clientID: 'e565ffa137248f19fe25',
+          clientSecret: 'a449b4aa974f12d27bdf3ccd4c7bcab87fd51ff5',
+          repo: 'my-blog',
+          owner: 'fuos',
+          admin: ['fuos'],
+          id: id,      // Ensure uniqueness and length less than 50
+          title: document.title.split('|')[0],
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        如果觉得文章对您有用，请打赏二两银子~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/my-blog/img/wechat.png" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/my-blog/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>なりたぁん &copy; 2020 - 2021</span>
+            <span>
+                
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/d59582a0.html&title=《开发日志1.0》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/d59582a0.html&title=《开发日志1.0》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/d59582a0.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《开发日志1.0》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/d59582a0.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/d59582a0.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nari2021.github.io/my-blog/posts/d59582a0.html" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/my-blog/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '(つェ⊂)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
