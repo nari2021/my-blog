@@ -371,14 +371,6 @@
     
 
 
-<section class="comments" id="comments">
-    <div id="disqus_thread"></div>
-    <script>
-    var disqus_shortname = 'true';
-    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-</section>
 
 
 
@@ -393,31 +385,6 @@
 
 
 
-
-
-<section class="comments" id="comments">
-    <div id="gitalk-container"></div>
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-        var id = location.pathname
-        if (location.pathname.length > 50) {
-          id = location.pathname.replace(/\/\d+\/\d+\/\d+\//, '').replace('/', '').substring(0, 50)
-        }
-        const gitalk = new Gitalk({
-          clientID: 'e565ffa137248f19fe25',
-          clientSecret: 'a449b4aa974f12d27bdf3ccd4c7bcab87fd51ff5',
-          repo: 'my-blog',
-          owner: 'fuos',
-          admin: ['fuos'],
-          id: id,      // Ensure uniqueness and length less than 50
-          title: document.title.split('|')[0],
-          distractionFreeMode: false  // Facebook-like distraction free mode
-        })
-
-        gitalk.render('gitalk-container')
-    </script>
-</section>
 
 
 
