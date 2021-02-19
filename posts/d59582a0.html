@@ -106,13 +106,6 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/my-blog/blank"  >
-                <i class="icon icon-lg icon-terminal"></i>
-                bulletin board
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
               <a href="https://github.com/nari2021/my-blog" target="_blank" >
                 <i class="icon icon-lg icon-github"></i>
                 Github
@@ -366,28 +359,56 @@
     </div>
 
     
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/my-blog/posts/a292b236.html" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">开发日志1.1</h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
 
 
     
 
 
-<section class="comments" id="comments">
-    <div id="disqus_thread"></div>
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
     <script>
-    var disqus_shortname = 'nari2021';
-    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "CbPotriRy5GHii9V5fWXjhcB-MdYXbMMI",
+            appKey: "0Q07HYS8853MtyGeEIIps7Sn",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-</section>
-
-
-
-
-
-
-
-
-
+    <!-- Valine Comments end -->
 
 
 
@@ -404,13 +425,13 @@
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <h3 class="reward-title">
         <i class="icon icon-quote-left"></i>
-        如果觉得文章对您有用，请打赏二两银子~
+        要恰饭的嘛，呜呜
         <i class="icon icon-quote-right"></i>
     </h3>
     <div class="reward-content">
         
         <div class="reward-code">
-            <img id="rewardCode" src="/my-blog/img/wechat.png" alt="打赏二维码">
+            <img id="rewardCode" src="/my-blog/img/wechat.jpg" alt="打赏二维码">
         </div>
         
     </div>
