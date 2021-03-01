@@ -6,7 +6,7 @@
   <link href="/my-blog/atom.xml" rel="self"/>
   
   <link href="https://nari2021.github.io/my-blog/"/>
-  <updated>2021-02-21T11:59:43.328Z</updated>
+  <updated>2021-02-19T08:29:07.998Z</updated>
   <id>https://nari2021.github.io/my-blog/</id>
   
   <author>
@@ -15,36 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>启程(いざ旅を)</title>
-    <link href="https://nari2021.github.io/my-blog/posts/6790905.html"/>
-    <id>https://nari2021.github.io/my-blog/posts/6790905.html</id>
-    <published>2021-02-20T14:40:04.000Z</published>
-    <updated>2021-02-21T11:59:43.328Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;写在开头：本文章仅代表个人观点，并且会全文中日对照翻译，如有勘误欢迎指正（不排除使用翻译机进行翻译的情况）&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&lt;strong&gt;—-2021.2.20（六）
-        
-      
-    
-    </summary>
-    
-    
-      <category term="启程" scheme="https://nari2021.github.io/my-blog/categories/%E5%90%AF%E7%A8%8B/"/>
-    
-    
-      <category term="日本語" scheme="https://nari2021.github.io/my-blog/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
-    
-      <category term="随笔" scheme="https://nari2021.github.io/my-blog/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
   
   <entry>
     <title>开发日志1.1</title>
