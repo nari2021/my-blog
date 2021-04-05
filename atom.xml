@@ -6,7 +6,7 @@
   <link href="/my-blog/atom.xml" rel="self"/>
   
   <link href="https://nari2021.github.io/my-blog/"/>
-  <updated>2021-02-19T08:29:07.998Z</updated>
+  <updated>2021-04-05T15:07:09.597Z</updated>
   <id>https://nari2021.github.io/my-blog/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日本語の勉強——詩（1）</title>
+    <link href="https://nari2021.github.io/my-blog/posts/5701c8b1.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/5701c8b1.html</id>
+    <published>2021-04-05T13:44:39.000Z</published>
+    <updated>2021-04-05T15:07:09.597Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;初恋&quot;&gt;&lt;a href=&quot;#初恋&quot; class=&quot;headerlink&quot; title=&quot;初恋..&quot;&gt;&lt;/a&gt;初恋..&lt;/h1&gt;&lt;h2 id=&quot;はじめに&quot;&gt;&lt;a href=&quot;#はじめに&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="日本語の勉強" scheme="https://nari2021.github.io/my-blog/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7/"/>
+    
+    
+      <category term="日本語" scheme="https://nari2021.github.io/my-blog/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+      <category term="詩" scheme="https://nari2021.github.io/my-blog/tags/%E8%A9%A9/"/>
+    
+      <category term="鑑賞" scheme="https://nari2021.github.io/my-blog/tags/%E9%91%91%E8%B3%9E/"/>
+    
+  </entry>
   
   <entry>
     <title>开发日志1.1</title>
