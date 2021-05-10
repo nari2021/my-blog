@@ -6,7 +6,7 @@
   <link href="/my-blog/atom.xml" rel="self"/>
   
   <link href="https://nari2021.github.io/my-blog/"/>
-  <updated>2021-05-10T10:15:23.684Z</updated>
+  <updated>2021-05-10T15:04:06.456Z</updated>
   <id>https://nari2021.github.io/my-blog/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>走れメロス</title>
+    <link href="https://nari2021.github.io/my-blog/posts/5a1d991.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/5a1d991.html</id>
+    <published>2021-05-10T13:08:38.000Z</published>
+    <updated>2021-05-10T15:04:06.456Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;新出語彙&lt;/p&gt;
+&lt;p&gt;妹婿：いもうとむこ&lt;/p&gt;
+&lt;p&gt;賢臣：けんしん&lt;/p&gt;
+&lt;p&gt;捕縛：ほばく&lt;/p&gt;
+&lt;p&gt;威厳：いげん&lt;/p&gt;
+&lt;p&gt;磔（はりつけ）とは、罪人を板や柱などに縛りつけ、槍などを用いて殺す公開処刑の刑罰のこと。磔刑（たっけい）&lt;/p&gt;
+&lt;p&gt;嗄れる：し
+        
+      
+    
+    </summary>
+    
+    
+      <category term="日本語の勉強" scheme="https://nari2021.github.io/my-blog/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7/"/>
+    
+    
+      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="日本語" scheme="https://nari2021.github.io/my-blog/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+      <category term="小説" scheme="https://nari2021.github.io/my-blog/tags/%E5%B0%8F%E8%AA%AC/"/>
+    
+  </entry>
   
   <entry>
     <title>Python学习笔记（1）</title>
