@@ -6,7 +6,7 @@
   <link href="/my-blog/atom.xml" rel="self"/>
   
   <link href="https://nari2021.github.io/my-blog/"/>
-  <updated>2021-05-14T14:32:51.051Z</updated>
+  <updated>2021-05-17T05:14:16.935Z</updated>
   <id>https://nari2021.github.io/my-blog/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python学习笔记(3)</title>
+    <link href="https://nari2021.github.io/my-blog/posts/a70f86a0.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/a70f86a0.html</id>
+    <published>2021-05-16T01:07:46.000Z</published>
+    <updated>2021-05-17T05:14:16.935Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;由于多次保存之后都不知道为什么被清了。所以只剩下截图了。&lt;/p&gt;
+&lt;figure class=&quot;image-bubble&quot;&gt;
+                &lt;div class=&quot;img-lightbox&quot;&gt;
+                    &lt;div
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python学习笔记" scheme="https://nari2021.github.io/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="Python" scheme="https://nari2021.github.io/my-blog/tags/Python/"/>
+    
+      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>吾輩は猫である</title>
@@ -48,7 +82,7 @@
     <link href="https://nari2021.github.io/my-blog/posts/7fc5b99e.html"/>
     <id>https://nari2021.github.io/my-blog/posts/7fc5b99e.html</id>
     <published>2021-05-11T00:53:43.000Z</published>
-    <updated>2021-05-14T14:38:41.425Z</updated>
+    <updated>2021-05-16T01:03:47.605Z</updated>
     
     <summary type="html">
     
@@ -67,6 +101,14 @@
     </summary>
     
     
+      <category term="Python学习笔记" scheme="https://nari2021.github.io/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="Python" scheme="https://nari2021.github.io/my-blog/tags/Python/"/>
+    
+      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
