@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?https://nari2021.github.io/"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Python学习笔记(5) | ナリのブログへようこそ | 来ぬ人をまつほの浦の夕凪に焼くや藻塩の身もこがれつつ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="编程,Python,学习笔记">
+    <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637# 集合 底层是用字典做的# set# 特点，没有重复，无序# 花括号内的元素不是键值对，就为set# 如果放的键值对，就是字典set1 &#x3D; &amp;#123;&#39;zhangsan&#39;&amp;#125;print(type(set1))# 列表强转集合list1 &#x3D; [1, 2, 3,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python学习笔记(5)">
+<meta property="og:url" content="https://nari2021.github.io/my-blog/posts/f1552126.html">
+<meta property="og:site_name" content="ナリのブログへようこそ">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637# 集合 底层是用字典做的# set# 特点，没有重复，无序# 花括号内的元素不是键值对，就为set# 如果放的键值对，就是字典set1 &#x3D; &amp;#123;&#39;zhangsan&#39;&amp;#125;print(type(set1))# 列表强转集合list1 &#x3D; [1, 2, 3,">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-19T01:38:56.000Z">
+<meta property="article:modified_time" content="2021-05-19T16:01:19.985Z">
+<meta property="article:author" content="なりたぁん">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="ナリのブログへようこそ" href="/my-blog/atom.xml">
+    
+    <link rel="shortcut icon" href="/my-blog/img/ressapannda.gif">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/my-blog/img/brand.jpg)">
+      <div class="brand">
+        <a href="/my-blog/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/my-blog/img/ressapannda.gif">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">なりたぁん</h5>
+          <a href="mailto:yuhongf@126.com" title="yuhongf@126.com" class="mail">yuhongf@126.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/nari2021/my-blog" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/blank" target="_blank" >
+                <i class="icon icon-lg icon-twitter"></i>
+                Twitter
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Python学习笔记(5)</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Python学习笔记(5)</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-05-19T01:38:56.000Z" itemprop="datePublished" class="page-time">
+  2021-05-19
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-Python学习笔记(5)"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Python学习笔记(5)</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-05-19 09:38:56" datetime="2021-05-19T01:38:56.000Z"  itemprop="datePublished">2021-05-19</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 集合 底层是用字典做的</span></span><br><span class="line"><span class="comment"># set</span></span><br><span class="line"><span class="comment"># 特点，没有重复，无序</span></span><br><span class="line"><span class="comment"># 花括号内的元素不是键值对，就为set</span></span><br><span class="line"><span class="comment"># 如果放的键值对，就是字典</span></span><br><span class="line">set1 = &#123;<span class="string">'zhangsan'</span>&#125;</span><br><span class="line">print(type(set1))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列表强转集合</span></span><br><span class="line">list1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">9</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line">set2 = set(list1)</span><br><span class="line">print(set2)</span><br><span class="line"></span><br><span class="line">set3 = &#123;&#125;  <span class="comment"># 空字典</span></span><br><span class="line">print(type(set3))</span><br><span class="line"></span><br><span class="line">set4 = set()  <span class="comment"># 集合声明方法</span></span><br><span class="line">print(type(set4))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加元素 add</span></span><br><span class="line">set4.add(<span class="string">'三体'</span>)</span><br><span class="line">set4.add(<span class="string">'盗墓笔记'</span>)</span><br><span class="line">pri</span><br><span class="line">print(result)nt(set4)</span><br><span class="line">set4.add(<span class="string">'红楼梦'</span>)</span><br><span class="line">print(set4)</span><br><span class="line"></span><br><span class="line"><span class="comment"># append extend -----&gt;list</span></span><br><span class="line"><span class="comment"># update add    -----&gt;set</span></span><br><span class="line">set1.update(set4)</span><br><span class="line">print(set1)  <span class="comment"># 将set4 插入到set1 中，无序。</span></span><br><span class="line">print(set4)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重复添加没有变化</span></span><br><span class="line">result = set4.add(<span class="string">'三体'</span>)  <span class="comment"># 没有返回值</span></span><br><span class="line">print(set4)</span><br></pre></td></tr></table></figure>
+
+<p>产生验证码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打印五组不重复验证码</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line">code_list = set()</span><br><span class="line">s = <span class="string">'qwertyuiopasdfghjklzxcvbnm0123456789'</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    code = <span class="string">''</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">4</span>):</span><br><span class="line">        r = random.choice(s)  <span class="comment"># 随机从某个字符串内选择一个</span></span><br><span class="line">        code += r</span><br><span class="line">        <span class="comment"># index = random.randint(0, len(s)-1)</span></span><br><span class="line">        <span class="comment"># code += s[index]</span></span><br><span class="line">    <span class="comment"># 将code添加到set中</span></span><br><span class="line">    code_list.add(code)</span><br><span class="line">    <span class="comment"># 判断长度为5</span></span><br><span class="line">    <span class="keyword">if</span> len(code_list) == <span class="number">5</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">print(code_list)</span><br></pre></td></tr></table></figure>
+
+<p>其余方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 移除元素 remove discard</span></span><br><span class="line"><span class="comment"># pop按顺序弹出，但是集合没有顺序 随机删除</span></span><br><span class="line">set1 = &#123;<span class="string">'rbkf'</span>, <span class="string">'2f3t'</span>, <span class="string">'kf7g'</span>, <span class="string">'t5li'</span>, <span class="string">'k8eb'</span>&#125;</span><br><span class="line">set1.remove(<span class="string">'rbkf'</span>)  <span class="comment"># 如果不存在会报错</span></span><br><span class="line">print(set1)</span><br><span class="line"></span><br><span class="line">set1.discard(<span class="string">'rbkf'</span>)  <span class="comment"># 如果成员不存在也不会报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># del set1 整个删除</span></span><br><span class="line">set1.clear()</span><br><span class="line">set1.difference()  <span class="comment"># 返回集合的差集</span></span><br><span class="line">set1.intersection()  <span class="comment"># 返回交集</span></span><br><span class="line">set1.union()  <span class="comment"># 并集</span></span><br><span class="line"><span class="comment"># 可以用符号代替 -差集 &amp;交集 |并集</span></span><br></pre></td></tr></table></figure>
+
+<p>几个常用结构相互转换</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">list ----&gt; tuple,set(长度可能会发生改变)</span></span><br><span class="line"><span class="string">tuple ----&gt;list,set(同上)</span></span><br><span class="line"><span class="string">set ----&gt; list,tuple</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">dict ---&gt; list,tuple,set  key值保留，value会丢失</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="comment"># list转dict</span></span><br><span class="line">list1 = [(<span class="string">'a'</span>, <span class="number">10</span>), (<span class="string">'b'</span>, <span class="number">20</span>)]</span><br><span class="line">print(dict(list1))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 公共方法(内置方法)</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">print() input() type() len() id() del</span></span><br><span class="line"><span class="string">in not in   is </span></span><br><span class="line"><span class="string">进制转换 bin hex oct int</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">最大值，最小值</span></span><br><span class="line"><span class="string">list1 = [1,2,3,4,5,6,7]</span></span><br><span class="line"><span class="string">result = max(list1)</span></span><br><span class="line"><span class="string">min()</span></span><br><span class="line"><span class="string">result = sum(list1) </span></span><br><span class="line"><span class="string">abs()</span></span><br><span class="line"><span class="string">sorted(xx,reverse=True)  # list1.sort(self,reverse)</span></span><br><span class="line"><span class="string">result = chr(int) ---&gt; ASCII码转换成字符。</span></span><br><span class="line"><span class="string">ord()  ----&gt;字符转ASCII码值。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+
+<p>列表推导式</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 列表推导式</span></span><br><span class="line">list1 = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">21</span>):</span><br><span class="line">    list1.append(i)</span><br><span class="line">print(list1)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 格式 [a for i in 可迭代的]</span></span><br><span class="line"><span class="comment"># a为赋值变量</span></span><br><span class="line">list1 = [i <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">21</span>)]</span><br><span class="line"></span><br><span class="line">list1 = [i + <span class="number">2</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">10</span>)]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 1-100之间的偶数</span></span><br><span class="line">list1 = [i * <span class="number">2</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">51</span>)]</span><br><span class="line">list1 = [i <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">101</span>, <span class="number">2</span>)]  <span class="comment"># 步长为2</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># if判断格式</span></span><br><span class="line"><span class="comment"># [i for i in 可迭代 if 条件]</span></span><br><span class="line">list1 = [i <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">101</span>) <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">list2 = [<span class="string">'62'</span>, <span class="string">'luck'</span>, <span class="string">'99'</span>]</span><br><span class="line">list3 = [word <span class="keyword">for</span> word <span class="keyword">in</span> list2 <span class="keyword">if</span> word.isalpha()]</span><br><span class="line"></span><br><span class="line"><span class="comment"># if else格式</span></span><br><span class="line">list4 = [word.title() <span class="keyword">if</span> word.startswith(<span class="string">'h'</span>) <span class="keyword">else</span> word.upper() <span class="keyword">for</span> word <span class="keyword">in</span> list3]</span><br><span class="line">print(list4)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 双层for循环</span></span><br><span class="line">list5 = [(i, j) <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">5</span>) <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">3</span>, <span class="number">5</span>)]</span><br></pre></td></tr></table></figure>
+
+<p>函数定义</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义函数</span></span><br><span class="line"><span class="comment"># 格式</span></span><br><span class="line"><span class="comment"># def 函数名()</span></span><br><span class="line"><span class="comment">#       代码</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># 打印五组不重复验证码</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">generate_code</span><span class="params">(n)</span>:</span></span><br><span class="line">    code_list = set()</span><br><span class="line">    s = <span class="string">'qwertyuiopasdfghjklzxcvbnm0123456789'</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        code = <span class="string">''</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">4</span>):</span><br><span class="line">            r = random.choice(s)  <span class="comment"># 随机从某个字符串内选择一个</span></span><br><span class="line">            code += r</span><br><span class="line">            <span class="comment"># index = random.randint(0, len(s)-1)</span></span><br><span class="line">            <span class="comment"># code += s[index]</span></span><br><span class="line">        <span class="comment"># 将code添加到set中</span></span><br><span class="line">        code_list.add(code)</span><br><span class="line">        <span class="comment"># 判断长度为5</span></span><br><span class="line">        <span class="keyword">if</span> len(code_list) == n:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    print(code_list)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(generate_code)  <span class="comment"># &lt;function generate_code at 0x0000028863077168&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">generate_code(<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
+<p>传参函数要注意类型判断</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 类型一致</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_sum</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="comment"># if type(a) == type(b):</span></span><br><span class="line">    <span class="comment">#     s = a + b</span></span><br><span class="line">    <span class="comment">#     print(s)</span></span><br><span class="line">    <span class="keyword">if</span> isinstance(a, int) <span class="keyword">and</span> isinstance(b, int):</span><br><span class="line">        s = a + b</span><br><span class="line">        print(s)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'类型错误!'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">get_sum(<span class="number">2</span>, <span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<p>形参，多个参数，可变参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 默认值参数</span></span><br><span class="line"><span class="comment"># def 函数名(参数1,参数2=值)</span></span><br><span class="line"><span class="comment"># 调用：无默认值必须传值，有默认值可传值可不传值</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数的数据类型是列表</span></span><br><span class="line">libaray = [<span class="string">'python精通'</span>, <span class="string">'MySQL'</span>, <span class="string">'数据分析'</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 形参</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_book</span><span class="params">(bookname)</span>:</span></span><br><span class="line">    libaray.append(bookname)</span><br><span class="line">    print(<span class="string">'成功'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_book</span><span class="params">(books)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> book <span class="keyword">in</span> books:</span><br><span class="line">        print(book)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">add_book(<span class="string">'新概念英语'</span>)</span><br><span class="line">show_book(libaray)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 可变参数 *arg **kwarg</span></span><br><span class="line"><span class="comment"># def get_sum(a, b):</span></span><br><span class="line"><span class="comment">#     r = a + b</span></span><br><span class="line"><span class="comment">#     print(r)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># *arg *a都是一样的，*号是必须的</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_sum</span><span class="params">(*args)</span>:</span></span><br><span class="line">    s = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> args:</span><br><span class="line">        s += i</span><br><span class="line">    print(s)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">get_sum(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">get_sum(<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>)</span><br><span class="line"></span><br><span class="line">a, *b, c = <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span></span><br><span class="line">print(a, b, c)</span><br><span class="line"><span class="comment"># *b [2, 3, 4]ran_list = [1, 3, 5, 4, 7, 8, 9]</span></span><br><span class="line"><span class="comment"># get_sum(ran_list)</span></span><br><span class="line"><span class="comment"># 传入的是元组 ([1, 3, 5, 4, 7, 8, 9],)</span></span><br><span class="line">get_sum(*ran_list)  <span class="comment"># 拆包</span></span><br></pre></td></tr></table></figure>
+
+<p>传参声明的时候，加星号为装包。装为列表</p>
+<p>调用的时候，加星号为拆包。将元组拆包。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2021-05-19T16:01:19.985Z" itemprop="dateUpdated">2021-05-20 00:01:19</time>
+</span><br>
+
+
+        
+        本文永久链接：<a href="/my-blog/posts/f1552126.html" target="_blank" rel="external">https://nari2021.github.io/my-blog/posts/f1552126.html</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://nari2021.github.io/my-blog">
+            <img src="/my-blog/img/ressapannda.gif" alt="なりたぁん">
+            なりたぁん
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/f1552126.html&title=《Python学习笔记(5)》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/f1552126.html&title=《Python学习笔记(5)》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/f1552126.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记(5)》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/f1552126.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/f1552126.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/my-blog/posts/e84e1067.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python学习笔记(4)</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "CbPotriRy5GHii9V5fWXjhcB-MdYXbMMI",
+            appKey: "0Q07HYS8853MtyGeEIIps7Sn",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        要恰饭的嘛，呜呜
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/my-blog/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/my-blog/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>なりたぁん &copy; 2020 - 2021</span>
+            <span>
+                
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/f1552126.html&title=《Python学习笔记(5)》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/f1552126.html&title=《Python学习笔记(5)》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/f1552126.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记(5)》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/f1552126.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/f1552126.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nari2021.github.io/my-blog/posts/f1552126.html" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/my-blog/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '(つェ⊂)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
