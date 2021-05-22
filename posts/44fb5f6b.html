@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?https://nari2021.github.io/"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Python学习笔记(8) | ナリのブログへようこそ | 来ぬ人をまつほの浦の夕凪に焼くや藻塩の身もこがれつつ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="编程,Python,学习笔记">
+    <meta name="description" content="文件的批量复制 12345678910111213141516171819202122232425import ossrc_path &#x3D; &#39;&#39;target_path &#x3D; &#39;&#39;def copy(src, target):    if os.path.isdir(src) and os.path.isdir(target):        filelist &#x3D; os.listdir(src)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python学习笔记(8)">
+<meta property="og:url" content="https://nari2021.github.io/my-blog/posts/44fb5f6b.html">
+<meta property="og:site_name" content="ナリのブログへようこそ">
+<meta property="og:description" content="文件的批量复制 12345678910111213141516171819202122232425import ossrc_path &#x3D; &#39;&#39;target_path &#x3D; &#39;&#39;def copy(src, target):    if os.path.isdir(src) and os.path.isdir(target):        filelist &#x3D; os.listdir(src)">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-22T01:12:46.000Z">
+<meta property="article:modified_time" content="2021-05-22T09:37:48.740Z">
+<meta property="article:author" content="なりたぁん">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="ナリのブログへようこそ" href="/my-blog/atom.xml">
+    
+    <link rel="shortcut icon" href="/my-blog/img/ressapannda.gif">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/my-blog/img/brand.jpg)">
+      <div class="brand">
+        <a href="/my-blog/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/my-blog/img/ressapannda.gif">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">なりたぁん</h5>
+          <a href="mailto:yuhongf@126.com" title="yuhongf@126.com" class="mail">yuhongf@126.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/nari2021/my-blog" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/blank" target="_blank" >
+                <i class="icon icon-lg icon-twitter"></i>
+                Twitter
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Python学习笔记(8)</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Python学习笔记(8)</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-05-22T01:12:46.000Z" itemprop="datePublished" class="page-time">
+  2021-05-22
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-Python学习笔记(8)"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Python学习笔记(8)</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-05-22 09:12:46" datetime="2021-05-22T01:12:46.000Z"  itemprop="datePublished">2021-05-22</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>文件的批量复制</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">src_path = <span class="string">''</span></span><br><span class="line">target_path = <span class="string">''</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">copy</span><span class="params">(src, target)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> os.path.isdir(src) <span class="keyword">and</span> os.path.isdir(target):</span><br><span class="line">        filelist = os.listdir(src)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> file <span class="keyword">in</span> filelist:</span><br><span class="line">            path = os.path.join(src, file)</span><br><span class="line">            <span class="keyword">with</span> open(path, <span class="string">'rb'</span>) <span class="keyword">as</span> rstream:  <span class="comment"># 只用r的话有些文件读不出来</span></span><br><span class="line">                container = rstream.read()</span><br><span class="line"></span><br><span class="line">                path1 = os.path.join(target, file)</span><br><span class="line">                <span class="keyword">with</span> open(path1, <span class="string">'wb'</span>)<span class="keyword">as</span> wstream:</span><br><span class="line">                    wstream.write(container)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">'复制完毕'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">copy(src_path, target_path)</span><br></pre></td></tr></table></figure>
+
+<p>复制的路径中有文件夹，使用递归。</p>
+<p>递归中将目标路径先拼接，用os.mkdir创建子文件夹，再将拼接后的路径传入copy递归。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 复制的文件中有文件夹</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">src_path = <span class="string">r'D:\Backup\桌面\Python'</span></span><br><span class="line">target_path = <span class="string">r'D:\Backup\桌面\P1'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">copy</span><span class="params">(src_path, target_path)</span>:</span></span><br><span class="line">    filelist = os.listdir(src_path)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> filelist:</span><br><span class="line">        path = os.path.join(src_path, file)</span><br><span class="line">        <span class="keyword">if</span> os.path.isdir(path):  <span class="comment"># 如果是文件夹</span></span><br><span class="line">            <span class="comment"># os.chdir(path)  # 进入/改变工作路径</span></span><br><span class="line">            <span class="comment"># 递归</span></span><br><span class="line">            target_path1 = os.path.join(target_path, file)</span><br><span class="line">            os.mkdir(target_path1)</span><br><span class="line"></span><br><span class="line">            copy(path, target_path1)</span><br><span class="line">            <span class="comment"># 复制路径如果target的话，子文件的所有文件都复制在了target里</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">with</span> open(path, <span class="string">'rb'</span>) <span class="keyword">as</span> rstream:</span><br><span class="line">                container = rstream.read()</span><br><span class="line">                path1 = os.path.join(target_path, file)</span><br><span class="line">                <span class="keyword">with</span> open(path1, <span class="string">'wb'</span>) <span class="keyword">as</span> wstream:</span><br><span class="line">                    wstream.write(container)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'复制完成'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">copy(src_path, target_path)</span><br></pre></td></tr></table></figure>
+
+<p>用户注册</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 用户注册</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">register</span><span class="params">()</span>:</span></span><br><span class="line">    username = input(<span class="string">'输入用户名:'</span>)</span><br><span class="line">    password = input(<span class="string">'输入密码:'</span>)</span><br><span class="line">    repassword = input(<span class="string">'再次输入密码:'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> password == repassword:</span><br><span class="line">        <span class="comment"># 保存信息</span></span><br><span class="line">        <span class="keyword">with</span> open(<span class="string">r'D:\Backup\桌面\P1\user.txt'</span>, <span class="string">'a'</span>)<span class="keyword">as</span> wstream:</span><br><span class="line">            wstream.write(<span class="string">'&#123;&#125; &#123;&#125;\n'</span>.format(username, password))</span><br><span class="line"></span><br><span class="line">        print(<span class="string">'用户注册成功'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'密码不一致'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用</span></span><br><span class="line">register()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 图书管理系统</span></span><br><span class="line"><span class="comment"># 文件保存功能</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用户注册</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">register</span><span class="params">()</span>:</span></span><br><span class="line">    username = input(<span class="string">'输入用户名:'</span>)</span><br><span class="line">    password = input(<span class="string">'输入密码:'</span>)</span><br><span class="line">    repassword = input(<span class="string">'再次输入密码:'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> password == repassword:</span><br><span class="line">        <span class="comment"># 保存信息</span></span><br><span class="line">        <span class="keyword">with</span> open(<span class="string">r'D:\Backup\桌面\P1\user.txt'</span>, <span class="string">'a'</span>)<span class="keyword">as</span> wstream:</span><br><span class="line">            wstream.write(<span class="string">'&#123;&#125; &#123;&#125;\n'</span>.format(username, password))</span><br><span class="line"></span><br><span class="line">        print(<span class="string">'用户注册成功'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">'密码不一致'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用户登录</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">login</span><span class="params">()</span>:</span></span><br><span class="line">    username = input(<span class="string">'输入用户名:'</span>)</span><br><span class="line">    password = input(<span class="string">'输入密码:'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> username <span class="keyword">and</span> password:  <span class="comment"># 非空</span></span><br><span class="line">        <span class="keyword">with</span> open(<span class="string">r'D:\Backup\桌面\P1\user.txt'</span>) <span class="keyword">as</span> rstream:</span><br><span class="line">            <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">                user = rstream.readline()  <span class="comment"># admin 123456\n</span></span><br><span class="line">                <span class="keyword">if</span> <span class="keyword">not</span> user:  <span class="comment"># 如果读到空说明读到尾</span></span><br><span class="line">                    print(<span class="string">'用户名或者密码输入有误!'</span>)</span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">                input_user = <span class="string">'&#123;&#125; &#123;&#125;\n'</span>.format(username, password)</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> user == input_user:</span><br><span class="line">                    print(<span class="string">'用户登陆成功'</span>)</span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_books</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">'-----------图书馆里的书有-----------'</span>)</span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">r'D:\Backup\桌面\P1\books.txt'</span>, <span class="string">'r'</span>, encoding=<span class="string">'UTF-8'</span>) <span class="keyword">as</span> rstream:</span><br><span class="line">        books = rstream.readlines()</span><br><span class="line">        <span class="keyword">for</span> book <span class="keyword">in</span> books:</span><br><span class="line">            print(book)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用</span></span><br><span class="line"><span class="comment"># register()</span></span><br><span class="line"><span class="comment"># login()</span></span><br><span class="line">show_books()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 异常处理</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">try:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">except:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">finally</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        n1 = input(<span class="string">'请输入第一个数字'</span>)</span><br><span class="line">        n2 = input(<span class="string">'请输入第二个数字'</span>)</span><br><span class="line">        result = n1 + n2</span><br><span class="line"></span><br><span class="line">        print(result)</span><br><span class="line">    <span class="keyword">except</span> ZeroDivisionError:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> err:</span><br><span class="line">        print(err)  <span class="comment"># 打印原因</span></span><br><span class="line">    <span class="keyword">else</span>:  <span class="comment"># 没有出现异常则执行</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></span><br><span class="line">    stream = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        <span class="keyword">if</span> stream:</span><br><span class="line">            stream.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">func()</span><br></pre></td></tr></table></figure>
+
+<p>生成器</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成器</span></span><br><span class="line"><span class="comment"># 一边循环一边计算称之为生成器 不会持续占用内存</span></span><br><span class="line"><span class="comment"># 1 通过列表推导式得到生成器</span></span><br><span class="line"><span class="comment"># newlist = [x * 3 for x in range(10)]</span></span><br><span class="line"><span class="comment"># print(newlist)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 只需要将推导式的方括号换成圆括号即可</span></span><br><span class="line">g = (x * <span class="number">3</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>))</span><br><span class="line">print(type(g))  <span class="comment"># &lt;class 'generator'&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 方式1 调用__next__() 每次只能生成一个元素</span></span><br><span class="line">print(g.__next__())</span><br><span class="line">print(g.__next__())</span><br><span class="line"></span><br><span class="line"><span class="comment"># 方式2 next()方法 builtins 方法</span></span><br><span class="line">print(next(g))</span><br><span class="line"><span class="comment"># 此时生成器上限是10  超出返回会报异常 StopIteration</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        e = next(g)</span><br><span class="line">        print(e)</span><br><span class="line">    <span class="keyword">except</span> StopIteration:</span><br><span class="line">        print(<span class="string">'产生完毕'</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+<p>只要函数中出现了yield关键字 就不是函数。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成器2 函数</span></span><br><span class="line"><span class="comment"># 斐波那契数列</span></span><br><span class="line"><span class="comment"># 函数中有yield关键字就不算为函数 为生成器</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">()</span>:</span></span><br><span class="line">    n = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        n += <span class="number">1</span></span><br><span class="line">        print(n)</span><br><span class="line">    <span class="comment"># yield n</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># func()  # 会一直打印</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></span><br><span class="line">    n = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        n += <span class="number">1</span></span><br><span class="line">        print(n)</span><br><span class="line">        <span class="keyword">yield</span> n  <span class="comment"># 只要加了该关键字就为生成器</span></span><br><span class="line"></span><br><span class="line">g = fun()</span><br><span class="line">print(g)  <span class="comment"># generator object</span></span><br></pre></td></tr></table></figure>
+
+<p>斐波那契数列</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fib</span><span class="params">(length)</span>:</span></span><br><span class="line">    a, b = <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">    n = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> n &lt; length:</span><br><span class="line">        <span class="comment"># print(b)</span></span><br><span class="line">        <span class="keyword">yield</span> b</span><br><span class="line">        a, b = b, a + b</span><br><span class="line">        n += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'没有更多元素'</span>  <span class="comment"># 返回值会以StopIretion的形式报错返回。</span></span><br><span class="line"></span><br><span class="line">g = fib(<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">print(next(g))</span><br><span class="line">print(next(g))</span><br><span class="line">print(next(g))</span><br><span class="line">print(next(g))</span><br><span class="line">print(next(g))</span><br><span class="line">print(next(g))</span><br><span class="line">print(next(g))</span><br><span class="line">print(next(g))</span><br></pre></td></tr></table></figure>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2021-05-22T09:37:48.740Z" itemprop="dateUpdated">2021-05-22 17:37:48</time>
+</span><br>
+
+
+        
+        本文永久链接：<a href="/my-blog/posts/44fb5f6b.html" target="_blank" rel="external">https://nari2021.github.io/my-blog/posts/44fb5f6b.html</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://nari2021.github.io/my-blog">
+            <img src="/my-blog/img/ressapannda.gif" alt="なりたぁん">
+            なりたぁん
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/44fb5f6b.html&title=《Python学习笔记(8)》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/44fb5f6b.html&title=《Python学习笔记(8)》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/44fb5f6b.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记(8)》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/44fb5f6b.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/44fb5f6b.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/my-blog/posts/c36343a4.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python学习笔记(7)</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "CbPotriRy5GHii9V5fWXjhcB-MdYXbMMI",
+            appKey: "0Q07HYS8853MtyGeEIIps7Sn",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        要恰饭的嘛，呜呜
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/my-blog/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/my-blog/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>なりたぁん &copy; 2020 - 2021</span>
+            <span>
+                
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/44fb5f6b.html&title=《Python学习笔记(8)》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/44fb5f6b.html&title=《Python学习笔记(8)》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/44fb5f6b.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记(8)》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/44fb5f6b.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/44fb5f6b.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nari2021.github.io/my-blog/posts/44fb5f6b.html" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/my-blog/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '(つェ⊂)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
