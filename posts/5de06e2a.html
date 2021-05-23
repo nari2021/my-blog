@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?https://nari2021.github.io/"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Python学习笔记(9) | ナリのブログへようこそ | 来ぬ人をまつほの浦の夕凪に焼くや藻塩の身もこがれつつ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="编程,Python,学习笔记">
+    <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041# def gen():#     i &#x3D; 0#     while i &lt; 5:#         temp &#x3D; yield i#         print(&#39;temp:&#39;, temp)#         i +&#x3D; 1# #     retur">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python学习笔记(9)">
+<meta property="og:url" content="https://nari2021.github.io/my-blog/posts/5de06e2a.html">
+<meta property="og:site_name" content="ナリのブログへようこそ">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041# def gen():#     i &#x3D; 0#     while i &lt; 5:#         temp &#x3D; yield i#         print(&#39;temp:&#39;, temp)#         i +&#x3D; 1# #     retur">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-23T07:52:59.800Z">
+<meta property="article:modified_time" content="2021-05-23T09:28:44.971Z">
+<meta property="article:author" content="なりたぁん">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="ナリのブログへようこそ" href="/my-blog/atom.xml">
+    
+    <link rel="shortcut icon" href="/my-blog/img/ressapannda.gif">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/my-blog/img/brand.jpg)">
+      <div class="brand">
+        <a href="/my-blog/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/my-blog/img/ressapannda.gif">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">なりたぁん</h5>
+          <a href="mailto:yuhongf@126.com" title="yuhongf@126.com" class="mail">yuhongf@126.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/nari2021/my-blog" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/blank" target="_blank" >
+                <i class="icon icon-lg icon-twitter"></i>
+                Twitter
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Python学习笔记(9)</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Python学习笔记(9)</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-05-23T07:52:59.800Z" itemprop="datePublished" class="page-time">
+  2021-05-23
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-Python学习笔记(9)"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Python学习笔记(9)</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-05-23 15:52:59" datetime="2021-05-23T07:52:59.800Z"  itemprop="datePublished">2021-05-23</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># def gen():</span></span><br><span class="line"><span class="comment">#     i = 0</span></span><br><span class="line"><span class="comment">#     while i &lt; 5:</span></span><br><span class="line"><span class="comment">#         temp = yield i</span></span><br><span class="line"><span class="comment">#         print('temp:', temp)</span></span><br><span class="line"><span class="comment">#         i += 1</span></span><br><span class="line"><span class="comment"># </span></span><br><span class="line"><span class="comment">#     return '没有任何数据'</span></span><br><span class="line"><span class="comment"># </span></span><br><span class="line"><span class="comment"># </span></span><br><span class="line"><span class="comment"># g = gen()</span></span><br><span class="line"><span class="comment"># # print(next(g))</span></span><br><span class="line"><span class="comment"># # print(next(g))</span></span><br><span class="line"><span class="comment"># # print(next(g))</span></span><br><span class="line"><span class="comment"># </span></span><br><span class="line"><span class="comment"># # g.__next__()</span></span><br><span class="line"><span class="comment"># g.send(None)</span></span><br><span class="line"><span class="comment"># n1 = g.send('哈哈')</span></span><br><span class="line"><span class="comment"># # 传值给yield，yield传给temp同时执行next</span></span><br><span class="line"><span class="comment"># # 执行一次next，程序会在yield处 执行return</span></span><br><span class="line"><span class="comment"># # 执行下一次next，会从上一次yield处继续执行</span></span><br><span class="line"><span class="comment"># print('n1=', n1)</span></span><br><span class="line"><span class="comment"># n2 = g.send('呵呵')</span></span><br><span class="line"><span class="comment"># print('n2=', n2)</span></span><br><span class="line"><span class="comment"># </span></span><br><span class="line"><span class="comment"># </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">task1</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        print(<span class="string">'第&#123;&#125;个'</span>.format(i))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">task2</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        print(<span class="string">'di&#123;&#125;ge'</span>.format(i))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">task1(<span class="number">10</span>)</span><br><span class="line">task2(<span class="number">5</span>)</span><br><span class="line"><span class="comment"># 线性进程</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 任务交替：</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">task1</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        print(<span class="string">'第&#123;&#125;个'</span>.format(i))</span><br><span class="line">        <span class="keyword">yield</span> <span class="literal">None</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">task2</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        print(<span class="string">'di&#123;&#125;ge'</span>.format(i))</span><br><span class="line">        <span class="keyword">yield</span> <span class="literal">None</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成器不生成任何东西</span></span><br><span class="line"><span class="comment"># 传入生成器套入循环就可以交替进行</span></span><br><span class="line"></span><br><span class="line">g1 = task1(<span class="number">5</span>)</span><br><span class="line">g2 = task2(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:  <span class="comment"># 没有跳出条件 用try和except</span></span><br><span class="line">        g1.__next__()</span><br><span class="line">        g2.__next__()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 迭代器和可迭代对象</span></span><br><span class="line"><span class="comment"># 判断是否可迭代</span></span><br><span class="line"><span class="keyword">from</span> collections.abc <span class="keyword">import</span> Iterable</span><br><span class="line"></span><br><span class="line">list1 = [<span class="number">1</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">8</span>]</span><br><span class="line">f = isinstance(list1, Iterable)</span><br><span class="line">print(f)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列表字符串等都可迭代</span></span><br><span class="line"><span class="comment"># 生成器：</span></span><br><span class="line"></span><br><span class="line">g = (x + <span class="number">1</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>))</span><br><span class="line">f = isinstance(g, Iterable)</span><br><span class="line">print(f)  <span class="comment"># 生成器可迭代</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 迭代器是一个可以记住遍历位置的对象，</span></span><br><span class="line"><span class="comment"># 迭代器对象从集合的第一个元素开始访问，</span></span><br><span class="line"><span class="comment"># 直到所有元素访问完，只能前进</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 可以被next不断调用访问下一个值，为迭代器Iterator</span></span><br><span class="line"><span class="comment"># 可迭代的不一定就是迭代器比如list（不能用next调用</span></span><br><span class="line"><span class="comment"># list----》迭代器</span></span><br><span class="line"><span class="comment"># iter() builtins</span></span><br><span class="line">list1 = iter(list1)  <span class="comment"># 类型转换成可迭代的迭代器</span></span><br><span class="line"></span><br><span class="line">print(next(list1))</span><br></pre></td></tr></table></figure>
+
+
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2021-05-23T09:28:44.971Z" itemprop="dateUpdated">2021-05-23 17:28:44</time>
+</span><br>
+
+
+        
+        本文永久链接：<a href="/my-blog/posts/5de06e2a.html" target="_blank" rel="external">https://nari2021.github.io/my-blog/posts/5de06e2a.html</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://nari2021.github.io/my-blog">
+            <img src="/my-blog/img/ressapannda.gif" alt="なりたぁん">
+            なりたぁん
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/5de06e2a.html&title=《Python学习笔记(9)》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/5de06e2a.html&title=《Python学习笔记(9)》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/5de06e2a.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记(9)》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/5de06e2a.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/5de06e2a.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/my-blog/posts/44fb5f6b.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python学习笔记(8)</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "CbPotriRy5GHii9V5fWXjhcB-MdYXbMMI",
+            appKey: "0Q07HYS8853MtyGeEIIps7Sn",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        要恰饭的嘛，呜呜
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/my-blog/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/my-blog/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>なりたぁん &copy; 2020 - 2021</span>
+            <span>
+                
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/5de06e2a.html&title=《Python学习笔记(9)》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/5de06e2a.html&title=《Python学习笔记(9)》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/5de06e2a.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记(9)》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/5de06e2a.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/5de06e2a.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nari2021.github.io/my-blog/posts/5de06e2a.html" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/my-blog/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '(つェ⊂)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
