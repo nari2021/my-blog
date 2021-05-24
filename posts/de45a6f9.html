@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?https://nari2021.github.io/"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Python学习笔记(10) | ナリのブログへようこそ | 来ぬ人をまつほの浦の夕凪に焼くや藻塩の身もこがれつつ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="编程,Python,学习笔记">
+    <meta name="description" content="123456789class Phone:    brand &#x3D; &#39;huaiwei&#39;# 创建对象t &#x3D; Phone()print(t.brand)t.brand &#x3D; &#39;iphone&#39;print(t.brand)  1234# 魔术方法：__名字__()def __init__(self):  # 创建对象时自动调用    print(&#39;innit ----&#39;)    123456789101112">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python学习笔记(10)">
+<meta property="og:url" content="https://nari2021.github.io/my-blog/posts/de45a6f9.html">
+<meta property="og:site_name" content="ナリのブログへようこそ">
+<meta property="og:description" content="123456789class Phone:    brand &#x3D; &#39;huaiwei&#39;# 创建对象t &#x3D; Phone()print(t.brand)t.brand &#x3D; &#39;iphone&#39;print(t.brand)  1234# 魔术方法：__名字__()def __init__(self):  # 创建对象时自动调用    print(&#39;innit ----&#39;)    123456789101112">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-24T02:57:26.000Z">
+<meta property="article:modified_time" content="2021-05-24T11:58:32.436Z">
+<meta property="article:author" content="なりたぁん">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="ナリのブログへようこそ" href="/my-blog/atom.xml">
+    
+    <link rel="shortcut icon" href="/my-blog/img/ressapannda.gif">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/my-blog/img/brand.jpg)">
+      <div class="brand">
+        <a href="/my-blog/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/my-blog/img/ressapannda.gif">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">なりたぁん</h5>
+          <a href="mailto:yuhongf@126.com" title="yuhongf@126.com" class="mail">yuhongf@126.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/nari2021/my-blog" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/blank" target="_blank" >
+                <i class="icon icon-lg icon-twitter"></i>
+                Twitter
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Python学习笔记(10)</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Python学习笔记(10)</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-05-24T02:57:26.000Z" itemprop="datePublished" class="page-time">
+  2021-05-24
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-Python学习笔记(10) "
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Python学习笔记(10)</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-05-24 10:57:26" datetime="2021-05-24T02:57:26.000Z"  itemprop="datePublished">2021-05-24</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Phone</span>:</span></span><br><span class="line">    brand = <span class="string">'huaiwei'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建对象</span></span><br><span class="line">t = Phone()</span><br><span class="line">print(t.brand)</span><br><span class="line">t.brand = <span class="string">'iphone'</span></span><br><span class="line">print(t.brand)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 魔术方法：__名字__()</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span>  <span class="comment"># 创建对象时自动调用</span></span><br><span class="line">    print(<span class="string">'innit ----'</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>:</span></span><br><span class="line">    name = <span class="string">'张三'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># def __init__(self):</span></span><br><span class="line">    <span class="comment">#     self.name = '张三'</span></span><br><span class="line">    <span class="comment">#     self.age = 18</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 传参</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, age)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">eat</span><span class="params">(self,food)</span>:</span></span><br><span class="line">        print(<span class="string">'今年&#123;&#125;岁，叫做&#123;&#125;,正在吃&#123;&#125;'</span>.format(self.age, self.name,food))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p = Person()</span><br><span class="line">p.name = <span class="string">'李四'</span></span><br><span class="line">p.eat()</span><br></pre></td></tr></table></figure>
+
+<p>类方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dog</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, nickname)</span>:</span></span><br><span class="line">        self.nickname = nickname</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 动态添加的nickname属性</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span>  <span class="comment"># self 对象  需要对象才能调用</span></span><br><span class="line">        print(<span class="string">'&#123;&#125;在院子里跑来跑去'</span>.format(self.nickname))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 类方法</span></span><br><span class="line">    <span class="comment"># 声明方式加一个@classmethod的修饰器</span></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">(cls)</span>:</span>  <span class="comment"># cls --&gt; class 有类就能调用</span></span><br><span class="line">        print(cls)  <span class="comment"># &lt;class '__main__.Dog'&gt;</span></span><br><span class="line">        <span class="comment"># print(cls.nickname) 报错</span></span><br><span class="line">        cls.run(d)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">d = Dog(<span class="string">'大黄'</span>)</span><br><span class="line">d.run()</span><br><span class="line"></span><br><span class="line"><span class="comment"># d.test()  报错</span></span><br><span class="line">Dog.test()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 因为类方法只能访问类属性和类方法，基本用于</span></span><br><span class="line"><span class="comment"># 在对象创建之前，如果需要完成一些功能的时候使用</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 私有对象 在前面加__</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>:</span></span><br><span class="line">    __age = <span class="number">18</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'-------&gt;'</span>, self.__age)</span><br><span class="line"></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">update_age</span><span class="params">(cls)</span>:</span></span><br><span class="line">        cls.__age = <span class="number">20</span></span><br><span class="line">        print(<span class="string">'类方法'</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show_age</span><span class="params">(cls)</span>:</span></span><br><span class="line">        print(<span class="string">'修改后的年龄为'</span>, cls.__age)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Person.update_age()</span><br><span class="line">Person.show_age()</span><br><span class="line">p = Person()</span><br><span class="line">p.show()</span><br></pre></td></tr></table></figure>
+
+<p>静态方法用staticmethod修饰器。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>:</span></span><br><span class="line">    __age = <span class="number">18</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'-------&gt;'</span>, self.__age)</span><br><span class="line"></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">update_age</span><span class="params">(cls)</span>:</span></span><br><span class="line">        cls.__age = <span class="number">20</span></span><br><span class="line">        print(<span class="string">'类方法'</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show_age</span><span class="params">(cls)</span>:</span></span><br><span class="line">        print(<span class="string">'修改后的年龄为'</span>, cls.__age)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 静态方法要加修饰器</span></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">()</span>:</span></span><br><span class="line">        print(<span class="string">'------&gt;静态方法'</span>)</span><br><span class="line">        <span class="comment"># print(self.name)  语法错误</span></span><br><span class="line">        <span class="comment"># print(cls.__age)  没传入cls不能直接用</span></span><br><span class="line">        print(Person.__age)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Person.update_age()</span><br><span class="line">Person.show_age()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 静态方法调用</span></span><br><span class="line">Person.test()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p = Person(<span class="string">'张三'</span>)</span><br><span class="line">p.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 静态方法</span></span><br><span class="line"><span class="comment"># 1 用修饰器staticmethod</span></span><br><span class="line"><span class="comment"># 2 无需传递参数cls,self</span></span><br><span class="line"><span class="comment"># 3 只能访问类的属性和方法，对象（实例化）无法访问</span></span><br><span class="line"><span class="comment"># 4 加载时机和类方法一致</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 类方法和静态方法不同</span></span><br><span class="line"><span class="comment"># 1 装饰器</span></span><br><span class="line"><span class="comment"># 2 有参数，无参数</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># 相同</span></span><br><span class="line"><span class="comment"># 只能访问类的属性和方法，对象无法访问</span></span><br><span class="line"><span class="comment"># 都可通过类名调用</span></span><br><span class="line"><span class="comment"># 创建对象之前使用，不依赖于对象</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 与普通方法不同</span></span><br><span class="line"><span class="comment"># 1 没有装饰器</span></span><br><span class="line"><span class="comment"># 2 普通方法要依赖对象，每个普通方法都有self</span></span><br><span class="line"><span class="comment"># 3 只有创建对象后才能使用方法</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span>:</span></span><br><span class="line">    type = <span class="string">'猫'</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, nickname, age, color)</span>:</span></span><br><span class="line">        self.nickname = nickname</span><br><span class="line">        self.age = age</span><br><span class="line">        self.color = color</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">eat</span><span class="params">(self, food)</span>:</span></span><br><span class="line">        print(<span class="string">'&#123;&#125;喜欢吃&#123;&#125;'</span>.format(self.nickname, food))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">catch_mouse</span><span class="params">(self, color, weight)</span>:</span></span><br><span class="line">        print(<span class="string">'&#123;&#125;,抓了一只&#123;&#125;kg的&#123;&#125;大老鼠'</span>.format(self.nickname, weight, color))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">sleep</span><span class="params">(self, hour)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> hour &lt; <span class="number">5</span>:</span><br><span class="line">            print(<span class="string">'继续睡觉'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">'赶快起床'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">show</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'猫的详细信息'</span>)</span><br><span class="line">        print(self.nickname, self.age, self.color)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cat1 = Cat(<span class="string">'花花'</span>, <span class="number">2</span>, <span class="string">'灰色'</span>)</span><br><span class="line">cat1.catch_mouse(<span class="string">'黑色'</span>,<span class="number">2</span>)</span><br><span class="line">cat1.sleep(<span class="number">8</span>)</span><br><span class="line">cat1.eat(<span class="string">'小金鱼'</span>)</span><br><span class="line">cat1.show()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 常用魔术方法</span></span><br><span class="line"><span class="comment"># 魔术方法是在特定时刻自动触发，不需要调用</span></span><br><span class="line"><span class="comment"># __init__ 参数至少接收一个self对象</span></span><br><span class="line"><span class="comment"># 触发时机：初始化对象时触发</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># __new__</span></span><br><span class="line"><span class="comment"># 触发时机：在实例化时触发</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="comment"># self.name = name</span></span><br><span class="line">        print(<span class="string">'-----&gt;init'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(cls, *args, **kwargs)</span>:</span></span><br><span class="line">        print(<span class="string">'------&gt;new'</span>)</span><br><span class="line">        <span class="comment"># new开辟一个新空间内存地址</span></span><br><span class="line">        <span class="comment"># 实际上把系统底层的new魔术方法覆盖了</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 把系统底层的也恢复</span></span><br><span class="line">        <span class="keyword">return</span> super().__new__(cls, *args, **kwargs)</span><br><span class="line">        <span class="comment"># 返回的是地址 传给init的self</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">       print(<span class="string">'---------&gt;call'</span>)</span><br><span class="line"></span><br><span class="line">p = Person()</span><br><span class="line">print(p)  <span class="comment"># p = None</span></span><br></pre></td></tr></table></figure>
+
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2021-05-24T11:58:32.436Z" itemprop="dateUpdated">2021-05-24 19:58:32</time>
+</span><br>
+
+
+        
+        本文永久链接：<a href="/my-blog/posts/de45a6f9.html" target="_blank" rel="external">https://nari2021.github.io/my-blog/posts/de45a6f9.html</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://nari2021.github.io/my-blog">
+            <img src="/my-blog/img/ressapannda.gif" alt="なりたぁん">
+            なりたぁん
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/de45a6f9.html&title=《Python学习笔记(10)》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/de45a6f9.html&title=《Python学习笔记(10)》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/de45a6f9.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记(10)》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/de45a6f9.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/de45a6f9.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/my-blog/posts/5de06e2a.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python学习笔记(9)</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "CbPotriRy5GHii9V5fWXjhcB-MdYXbMMI",
+            appKey: "0Q07HYS8853MtyGeEIIps7Sn",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        要恰饭的嘛，呜呜
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/my-blog/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/my-blog/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>なりたぁん &copy; 2020 - 2021</span>
+            <span>
+                
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/de45a6f9.html&title=《Python学习笔记(10)》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/de45a6f9.html&title=《Python学习笔记(10)》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/de45a6f9.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记(10)》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/de45a6f9.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/de45a6f9.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nari2021.github.io/my-blog/posts/de45a6f9.html" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/my-blog/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '(つェ⊂)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
