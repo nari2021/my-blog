@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?https://nari2021.github.io/"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Python学习笔记(12) | ナリのブログへようこそ | 来ぬ人をまつほの浦の夕凪に焼くや藻塩の身もこがれつつ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="编程,Python,学习笔记">
+    <meta name="description" content="time模块 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162# time模块import timet &#x3D; time.time()print(t)  # 1622084492.9106774# time.sleep(3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python学习笔记(12)">
+<meta property="og:url" content="https://nari2021.github.io/my-blog/posts/ec73c47b.html">
+<meta property="og:site_name" content="ナリのブログへようこそ">
+<meta property="og:description" content="time模块 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162# time模块import timet &#x3D; time.time()print(t)  # 1622084492.9106774# time.sleep(3">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-27T02:12:51.000Z">
+<meta property="article:modified_time" content="2021-05-28T11:19:27.062Z">
+<meta property="article:author" content="なりたぁん">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="ナリのブログへようこそ" href="/my-blog/atom.xml">
+    
+    <link rel="shortcut icon" href="/my-blog/img/ressapannda.gif">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/my-blog/img/brand.jpg)">
+      <div class="brand">
+        <a href="/my-blog/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/my-blog/img/ressapannda.gif">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">なりたぁん</h5>
+          <a href="mailto:yuhongf@126.com" title="yuhongf@126.com" class="mail">yuhongf@126.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/nari2021/my-blog" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/blank" target="_blank" >
+                <i class="icon icon-lg icon-twitter"></i>
+                Twitter
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Python学习笔记(12)</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Python学习笔记(12)</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-05-27T02:12:51.000Z" itemprop="datePublished" class="page-time">
+  2021-05-27
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-Python学习笔记(12) "
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Python学习笔记(12)</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-05-27 10:12:51" datetime="2021-05-27T02:12:51.000Z"  itemprop="datePublished">2021-05-27</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>time模块</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># time模块</span></span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line">t = time.time()</span><br><span class="line">print(t)  <span class="comment"># 1622084492.9106774</span></span><br><span class="line"><span class="comment"># time.sleep(3)  # 传入的是秒</span></span><br><span class="line">t1 = time.time()</span><br><span class="line">print(t1 - t)</span><br><span class="line"></span><br><span class="line">s = time.ctime(t)</span><br><span class="line"><span class="comment"># 把time.time方法的绝对时间（以秒为单位</span></span><br><span class="line"><span class="comment"># 转化为字符串</span></span><br><span class="line"><span class="comment"># Thu May 27 11:05:57 2021</span></span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">t = time.localtime(t)</span><br><span class="line">print(t)  <span class="comment"># 以元组形式存储</span></span><br><span class="line"><span class="comment"># time.struct_time(tm_year=2021, tm_mon=5, tm_mday=27, tm_hour=11, tm_min=8,</span></span><br><span class="line"><span class="comment"># tm_sec=23, tm_wday=3, tm_yday=147, tm_isdst=0)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将元组换回时间戳</span></span><br><span class="line">tt = time.mktime(t)</span><br><span class="line">print(tt)  <span class="comment"># 1622085023.0 没有精度值</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 元组转为字符串</span></span><br><span class="line">s = time.strftime(<span class="string">'%Y-%m-%d %H:%M:%S'</span>)</span><br><span class="line"><span class="comment"># 函数内有格式说明</span></span><br><span class="line">print(s)  <span class="comment"># 2021-05-27 11:16:11</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">    %Y  Year with century as a decimal number.</span></span><br><span class="line"><span class="string">    %m  Month as a decimal number [01,12].</span></span><br><span class="line"><span class="string">    %d  Day of the month as a decimal number [01,31].</span></span><br><span class="line"><span class="string">    %H  Hour (24-hour clock) as a decimal number [00,23].</span></span><br><span class="line"><span class="string">    %M  Minute as a decimal number [00,59].</span></span><br><span class="line"><span class="string">    %S  Second as a decimal number [00,61].</span></span><br><span class="line"><span class="string">    %z  Time zone offset from UTC.</span></span><br><span class="line"><span class="string">    %a  Locale's abbreviated weekday name.</span></span><br><span class="line"><span class="string">    %A  Locale's full weekday name.</span></span><br><span class="line"><span class="string">    %b  Locale's abbreviated month name.</span></span><br><span class="line"><span class="string">    %B  Locale's full month name.</span></span><br><span class="line"><span class="string">    %c  Locale's appropriate date and time representation.</span></span><br><span class="line"><span class="string">    %I  Hour (12-hour clock) as a decimal number [01,12].</span></span><br><span class="line"><span class="string">    %p  Locale's equivalent of either AM or PM.</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">s = time.strptime(<span class="string">'2021/5/27'</span>, <span class="string">'%Y/%m/%d'</span>)</span><br><span class="line">print(s)  <span class="comment"># ptime 转为元组</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line">print(datetime.time.hour)</span><br><span class="line"><span class="comment"># &lt;attribute 'hour' of 'datetime.time' objects&gt;</span></span><br><span class="line">print(time.localtime().tm_hour)  <span class="comment"># 11</span></span><br><span class="line">print(datetime.date.today())  <span class="comment"># 2021-05-27</span></span><br><span class="line"></span><br><span class="line">timedel = datetime.timedelta(hours=<span class="number">2</span>,weeks=<span class="number">3</span>)</span><br><span class="line"><span class="comment"># 时间差</span></span><br><span class="line">print(timedel)</span><br><span class="line">now = datetime.datetime.now()</span><br><span class="line">result = now + timedel</span><br><span class="line">print(result)  <span class="comment"># 2021-05-27 13:43:37.647334</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># random模块</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line">ran = random.random()  <span class="comment"># 0~1之间的随机小数</span></span><br><span class="line">print(ran)</span><br><span class="line"></span><br><span class="line">ran = random.randrange(<span class="number">1</span>, <span class="number">10</span>, <span class="number">2</span>)  <span class="comment"># 步长2</span></span><br><span class="line">print(ran)</span><br><span class="line"></span><br><span class="line">ran = random.randint(<span class="number">1</span>, <span class="number">20</span>)</span><br><span class="line"></span><br><span class="line">list1 = [<span class="string">'club 2 '</span>, <span class="string">'club 5'</span>, <span class="string">'space 4'</span>, <span class="string">'heart13'</span>]</span><br><span class="line">ran = random.choice(list1)</span><br><span class="line"><span class="comment"># 随机选</span></span><br><span class="line">print(ran)</span><br><span class="line"></span><br><span class="line">ran = random.shuffle(list1)  <span class="comment"># 无返回值</span></span><br><span class="line">print(list1)  <span class="comment"># 随机打乱</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 验证码</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">()</span>:</span></span><br><span class="line">    code = <span class="string">''</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">4</span>):</span><br><span class="line">        ran1 = chr(random.randint(<span class="number">0</span>, <span class="number">9</span>))</span><br><span class="line">        ran2 = chr(random.randint(<span class="number">65</span>, <span class="number">90</span>))</span><br><span class="line">        ran3 = chr(random.randint(<span class="number">97</span>, <span class="number">122</span>))</span><br><span class="line"></span><br><span class="line">        r = random.choice([ran1, ran2, ran3])</span><br><span class="line"></span><br><span class="line">        code += r</span><br><span class="line">    <span class="keyword">return</span> code</span><br><span class="line"></span><br><span class="line"><span class="comment"># chr ord ascii互转</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> hashlib  <span class="comment"># 加密算法模块</span></span><br><span class="line"></span><br><span class="line">msg = <span class="string">'于鹏中午一起吃饭去'</span></span><br><span class="line">md5 = hashlib.md5(msg.encode(<span class="string">'utf-8'</span>))</span><br><span class="line"><span class="comment"># 不支持中文</span></span><br><span class="line">print(md5.hexdigest())</span><br><span class="line"><span class="comment"># hexdigest取16进制表示，没有自动联想</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">qq = input(<span class="string">'输入qq号码'</span>)</span><br><span class="line"><span class="keyword">if</span> len(qq)&gt;=<span class="number">5</span> <span class="keyword">and</span> qq[<span class="number">0</span>]!=<span class="string">'0'</span>:</span><br><span class="line">    print(<span class="string">'合法'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'不合法'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>正则表达式</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'娜扎佟丽娅热巴'</span></span><br><span class="line">result = re.match(<span class="string">'佟丽娅'</span>, s)</span><br><span class="line"><span class="comment"># 默认从头匹配，如果匹配不成功返回none</span></span><br><span class="line">print(result)</span><br><span class="line"><span class="comment"># 正则表达式,匹配字符串</span></span><br><span class="line"></span><br><span class="line">result = re.search(<span class="string">'佟丽娅'</span>, s)</span><br><span class="line"><span class="comment"># span为查找到的范围</span></span><br><span class="line">print(result.span())  <span class="comment"># (2, 5)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># result=s.find('佟丽娅')</span></span><br><span class="line"><span class="comment"># print(result)</span></span><br><span class="line">print(result.group())</span><br><span class="line"><span class="comment"># 提取到匹配的内容部分 group</span></span><br><span class="line">print(result.groups())</span><br></pre></td></tr></table></figure>
+
+<p>[]表示指定范围的一个字符</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'哈哈23f55216'</span></span><br><span class="line">result = re.search(<span class="string">'[0-9][a-z]'</span>,s)</span><br><span class="line">print(result)  <span class="comment"># &lt;re.Match object; span=(3, 5), match='3f'&gt;</span></span><br><span class="line"><span class="comment"># [] 表示一个范围，范围内为需要匹配的指定范围</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'ab56cd7vg42dfa8saf4a00'</span></span><br><span class="line">result = re.findall(<span class="string">'[a-z][0-9][a-z]'</span>, s)</span><br><span class="line"><span class="comment"># search只会匹配第一个</span></span><br><span class="line"><span class="comment"># findall匹配所有</span></span><br><span class="line">print(result)  <span class="comment"># ['d7v', 'a8s']</span></span><br><span class="line">result = re.findall(<span class="string">'[a-z][0-9]+[a-z]'</span>)</span><br><span class="line"><span class="comment"># 正则验证次数</span></span><br><span class="line"><span class="comment"># * :&gt;=0次</span></span><br><span class="line"><span class="comment"># + :&gt;=1次</span></span><br><span class="line"><span class="comment"># ? :0/1次</span></span><br><span class="line"><span class="comment"># *? +? ?? : 前面三种字符的非贪婪模式，尽可能少的匹配</span></span><br><span class="line"><span class="comment"># &#123;m,n&#125; : 规定次数</span></span><br><span class="line"><span class="comment"># &#123;m,n&#125;？ : 非贪婪</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="comment"># qq号验证 5-11位</span></span><br><span class="line">qq = <span class="string">'456894562'</span></span><br><span class="line"><span class="comment"># 开头不能为0 1-9</span></span><br><span class="line">result = re.match(<span class="string">'^[1-9][0-9]&#123;4,10&#125;$'</span>, qq)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line"><span class="comment"># '.' 用于匹配除换行符之外的所有字符</span></span><br><span class="line"><span class="comment"># '^' 用于匹配行首</span></span><br><span class="line"><span class="comment"># '$' 用于匹配除换行符之外的行尾</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 表示字母或者数字开头</span></span><br><span class="line"><span class="comment"># [0-9a-zA-Z]</span></span><br><span class="line"></span><br><span class="line">username = <span class="string">'admin001'</span></span><br><span class="line">result = re.match(<span class="string">'[a-zA-Z][0-9a-zA-Z]&#123;5,&#125;'</span>, username)</span><br><span class="line">print(result)</span><br><span class="line">result = re.search(<span class="string">'^[a-zA-Z][0-9a-zA-Z]&#123;5,&#125;$'</span>, username)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">msg = <span class="string">'aa*py ab.txt bb.py kk.png uu.py apyb.txt'</span></span><br><span class="line"><span class="comment"># result = re.findall(r'\w+.py\b', msg)</span></span><br><span class="line"><span class="comment"># ['aa*py', 'bb.py', 'uu.py'] '.'表示任意字符</span></span><br><span class="line">result = re.findall(<span class="string">r'\w+\.py\b'</span>, msg)</span><br><span class="line"><span class="comment"># 不是正则的\b要双\ 或者+r 不转译</span></span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">n = <span class="string">'1000'</span></span><br><span class="line"><span class="comment"># 匹配数字</span></span><br><span class="line">result = re.match(<span class="string">r'[1-9]?\d?$|100$'</span>, n)</span><br><span class="line"><span class="comment"># 第一位1-9 ？表示非贪婪。\d 任意数字非贪婪匹配两位￥做结尾</span></span><br><span class="line"><span class="comment"># |100$ 表示或者100</span></span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line"><span class="comment"># (word|word|word) 表示或者 [word] 表示的是一个字母或者数字</span></span><br><span class="line"></span><br><span class="line">email = <span class="string">'12345649@qq.com'</span></span><br><span class="line">result = re.match(<span class="string">r'\w&#123;5,20&#125;@(163|126|qq)\.(com|cn)$'</span>, email)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">msg = <span class="string">'&lt;html&gt;&lt;h1&gt;abc&lt;/h1&gt;&lt;/html&gt;'</span></span><br><span class="line"></span><br><span class="line">result = re.match(<span class="string">r'&lt;(?P&lt;name1&gt;\w+)&gt;&lt;(?P&lt;name2&gt;\w+)&gt;(.+)&lt;/(?P=name2)&gt;&lt;/(?P=name1)&gt;'</span>, msg)</span><br><span class="line">print(result)</span><br><span class="line">print(result.group(<span class="number">1</span>))</span><br><span class="line">print(result.group(<span class="number">2</span>))</span><br><span class="line">print(result.group(<span class="number">3</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 引用分组匹配内容</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1.number</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># 2. (?P&lt;name&gt;正则)</span></span><br><span class="line"><span class="comment"># re:</span></span><br><span class="line"><span class="comment"># match</span></span><br><span class="line"><span class="comment"># search</span></span><br><span class="line"><span class="comment"># findall</span></span><br><span class="line"><span class="comment"># sub : 将匹配到的内容进行替换</span></span><br><span class="line"><span class="comment"># re.sub('正则表达式', '想替换的内容', '替换（搜索）的字符串', count)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># split 匹配到表达式的内容后切片</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">phone = <span class="string">'15901018868'</span></span><br><span class="line">result = re.match(<span class="string">r'1\d&#123;9&#125;[0-35689]$'</span>, phone)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 爬虫</span></span><br><span class="line">phone = <span class="string">'010-12345678'</span></span><br><span class="line">result = re.match(<span class="string">r'(\d&#123;3&#125;|\d&#123;4&#125;)-(\d&#123;8&#125;)$'</span>, phone)</span><br><span class="line"><span class="comment"># 小括号表示分组 方便group提取</span></span><br><span class="line">print(result)</span><br><span class="line">print(result.group(<span class="number">1</span>))</span><br><span class="line">print(result.group(<span class="number">2</span>))</span><br><span class="line"></span><br><span class="line">msg = <span class="string">'&lt;html&gt;abc&lt;/html&gt;'</span></span><br><span class="line">msg1 = <span class="string">'&lt;h1&gt;hello&lt;/h1&gt;'</span></span><br><span class="line"></span><br><span class="line">result = re.match(<span class="string">r'&lt;([\w]+)&gt;(.+)&lt;/\1&gt;$'</span>, msg)</span><br><span class="line"><span class="comment"># \1 代表第几个括号的引用</span></span><br><span class="line">print(result.group(<span class="number">1</span>))</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line"><span class="comment"># msg = '&lt;html&gt;&lt;h1&gt;abc&lt;/html&gt;&lt;/h1&gt;'  # None</span></span><br><span class="line">msg = <span class="string">'&lt;html&gt;&lt;h1&gt;abc&lt;/h1&gt;&lt;/html&gt;'</span></span><br><span class="line">result = re.match(<span class="string">r'&lt;([\w]+)&gt;&lt;([\w]+)&gt;(.+)&lt;/\2&gt;&lt;/\1&gt;$'</span>,msg)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+
+<p>线程进程</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> multiprocessing <span class="keyword">import</span> Process</span><br><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> sleep</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">task1</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        sleep(<span class="number">1</span>)</span><br><span class="line">        print(<span class="string">'任务1'</span>, os.getpid(), <span class="string">'---'</span>, os.getppid())</span><br><span class="line">        <span class="comment"># 当前进程id</span></span><br><span class="line">        <span class="comment"># getppid 为父进程</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">task2</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        sleep(<span class="number">1</span>)</span><br><span class="line">        print(<span class="string">'任务2'</span>, os.getpid(), <span class="string">'---'</span>, os.getppid())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">进程初始化</span></span><br><span class="line"><span class="string">class Process():</span></span><br><span class="line"><span class="string">    name: str</span></span><br><span class="line"><span class="string">    daemon: bool</span></span><br><span class="line"><span class="string">    pid: Optional[int]</span></span><br><span class="line"><span class="string">    exitcode: Optional[int]</span></span><br><span class="line"><span class="string">    authkey: bytes</span></span><br><span class="line"><span class="string">    sentinel: int</span></span><br><span class="line"><span class="string">    # TODO: set type of group to None</span></span><br><span class="line"><span class="string">    def __init__(self,</span></span><br><span class="line"><span class="string">                 group: Any = ...,</span></span><br><span class="line"><span class="string">                 target: Optional[Callable] = ...,</span></span><br><span class="line"><span class="string">                 name: Optional[str] = ...,</span></span><br><span class="line"><span class="string">                 args: Iterable[Any] = ...,</span></span><br><span class="line"><span class="string">                 kwargs: Mapping[Any, Any] = ...,</span></span><br><span class="line"><span class="string">                 *,</span></span><br><span class="line"><span class="string">                 daemon: Optional[bool] = ...) -&gt; None: ...</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># 创建进程</span></span><br><span class="line">    os.getpid()</span><br><span class="line">    p = Process(target=task1, name=<span class="string">'任务1'</span>)</span><br><span class="line">    <span class="comment"># p.run()  # 不会启动进程</span></span><br><span class="line">    p1 = Process(target=task2, name=<span class="string">'任务2'</span>)</span><br><span class="line">    p.start()</span><br><span class="line">    p1.start()</span><br><span class="line">    <span class="comment"># task1()</span></span><br><span class="line">    <span class="comment"># task2()</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> multiprocessing <span class="keyword">import</span> Process</span><br><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> sleep</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">task1</span><span class="params">(s, name)</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        sleep(s)</span><br><span class="line">        print(<span class="string">'任务1'</span>, os.getpid(), <span class="string">'---'</span>, os.getppid(), name)</span><br><span class="line">        <span class="comment"># 当前进程id</span></span><br><span class="line">        <span class="comment"># getppid 为父进程</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">task2</span><span class="params">(s, name)</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        sleep(s)</span><br><span class="line">        print(<span class="string">'任务2'</span>, os.getpid(), <span class="string">'---'</span>, os.getppid(), name)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">进程初始化</span></span><br><span class="line"><span class="string">class Process():</span></span><br><span class="line"><span class="string">    name: str</span></span><br><span class="line"><span class="string">    daemon: bool</span></span><br><span class="line"><span class="string">    pid: Optional[int]</span></span><br><span class="line"><span class="string">    exitcode: Optional[int]</span></span><br><span class="line"><span class="string">    authkey: bytes</span></span><br><span class="line"><span class="string">    sentinel: int</span></span><br><span class="line"><span class="string">    # TODO: set type of group to None</span></span><br><span class="line"><span class="string">    def __init__(self,</span></span><br><span class="line"><span class="string">                 group: Any = ...,</span></span><br><span class="line"><span class="string">                 target: Optional[Callable] = ...,</span></span><br><span class="line"><span class="string">                 name: Optional[str] = ...,</span></span><br><span class="line"><span class="string">                 args: Iterable[Any] = ...,</span></span><br><span class="line"><span class="string">                 kwargs: Mapping[Any, Any] = ...,</span></span><br><span class="line"><span class="string">                 *,</span></span><br><span class="line"><span class="string">                 daemon: Optional[bool] = ...) -&gt; None: ...</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">m = <span class="number">1</span></span><br><span class="line">list1 = []</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    p = Process(target=task1, name=<span class="string">'任务1'</span>, args=(<span class="number">1</span>, <span class="string">'aa'</span>))</span><br><span class="line">    p1 = Process(target=task2, name=<span class="string">'任务2'</span>, args=(<span class="number">2</span>, <span class="string">'bb'</span>))</span><br><span class="line">    <span class="comment"># args参数为可迭代的，传入一个元组(1,)</span></span><br><span class="line">    <span class="comment"># task中就能接到这个参数赋给sleep</span></span><br><span class="line">    p.start()</span><br><span class="line">    p1.start()</span><br><span class="line">    number = <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="keyword">global</span> m  <span class="comment"># 由于进程独立处理的，所以不能共享变量</span></span><br><span class="line">        <span class="comment"># 即不可变类型</span></span><br><span class="line">        number+=<span class="number">1</span></span><br><span class="line">        sleep(<span class="number">0.2</span>)</span><br><span class="line">        <span class="keyword">if</span> number == <span class="number">100</span>:</span><br><span class="line">            p.terminate()</span><br><span class="line">            p1.terminate()</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">'---'</span>,number)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">process = Process(target=函数名,name=进程名,args=传参）</span></span><br><span class="line"><span class="string">process对象</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">method</span></span><br><span class="line"><span class="string">p.start  启动进程</span></span><br><span class="line"><span class="string">p.run    执行任务没有启动进程</span></span><br><span class="line"><span class="string">terminate  终止</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+
+<p>自定义</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyProcess</span><span class="params">(Process)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        super(MyProcess, self).__init__()</span><br><span class="line">        self.name = name</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 重写run方法</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        n = <span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            print(<span class="string">'进程名字:'</span> + self.name)</span><br><span class="line">            print(<span class="string">'&#123;&#125;----&gt;自定义进程,n:&#123;&#125;'</span>.format(self.name, n))</span><br><span class="line">            n += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    p = MyProcess(<span class="string">'小明'</span>)</span><br><span class="line">    p.start()</span><br><span class="line"></span><br><span class="line">    p1 = MyProcess(<span class="string">'小红'</span>)</span><br><span class="line">    p1.start()</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2021-05-28T11:19:27.062Z" itemprop="dateUpdated">2021-05-28 19:19:27</time>
+</span><br>
+
+
+        
+        本文永久链接：<a href="/my-blog/posts/ec73c47b.html" target="_blank" rel="external">https://nari2021.github.io/my-blog/posts/ec73c47b.html</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://nari2021.github.io/my-blog">
+            <img src="/my-blog/img/ressapannda.gif" alt="なりたぁん">
+            なりたぁん
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/ec73c47b.html&title=《Python学习笔记(12)》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/ec73c47b.html&title=《Python学习笔记(12)》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/ec73c47b.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记(12)》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/ec73c47b.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/ec73c47b.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/my-blog/posts/c75e97b8.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python学习笔记(11)</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "CbPotriRy5GHii9V5fWXjhcB-MdYXbMMI",
+            appKey: "0Q07HYS8853MtyGeEIIps7Sn",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        要恰饭的嘛，呜呜
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/my-blog/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/my-blog/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>なりたぁん &copy; 2020 - 2021</span>
+            <span>
+                
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/ec73c47b.html&title=《Python学习笔记(12)》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/ec73c47b.html&title=《Python学习笔记(12)》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/ec73c47b.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python学习笔记(12)》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/ec73c47b.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/ec73c47b.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nari2021.github.io/my-blog/posts/ec73c47b.html" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/my-blog/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '(つェ⊂)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
