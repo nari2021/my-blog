@@ -6,7 +6,7 @@
   <link href="/my-blog/atom.xml" rel="self"/>
   
   <link href="https://nari2021.github.io/my-blog/"/>
-  <updated>2021-05-28T11:19:27.062Z</updated>
+  <updated>2021-09-22T12:05:54.787Z</updated>
   <id>https://nari2021.github.io/my-blog/</id>
   
   <author>
@@ -17,11 +17,98 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HTMLCSS网页设计学习笔记(1)</title>
+    <link href="https://nari2021.github.io/my-blog/posts/97a2ee40.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/97a2ee40.html</id>
+    <published>2021-09-19T11:39:03.000Z</published>
+    <updated>2021-09-22T12:05:54.787Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;web前端的第一部分：HTML+CSS 编程软件Hbuilderx&lt;/p&gt;
+&lt;p&gt;第一个helloworld，使用的内置浏览器运行&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="web前端学习笔记" scheme="https://nari2021.github.io/my-blog/categories/web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="HTML" scheme="https://nari2021.github.io/my-blog/tags/HTML/"/>
+    
+      <category term="CSS" scheme="https://nari2021.github.io/my-blog/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>倒垃圾--1</title>
+    <link href="https://nari2021.github.io/my-blog/posts/4babb3b.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/4babb3b.html</id>
+    <published>2021-07-15T13:12:48.000Z</published>
+    <updated>2021-09-19T11:37:35.696Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="负能量" scheme="https://nari2021.github.io/my-blog/categories/%E8%B4%9F%E8%83%BD%E9%87%8F/"/>
+    
+    
+      <category term="负能量" scheme="https://nari2021.github.io/my-blog/tags/%E8%B4%9F%E8%83%BD%E9%87%8F/"/>
+    
+      <category term="倒垃圾" scheme="https://nari2021.github.io/my-blog/tags/%E5%80%92%E5%9E%83%E5%9C%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python学习笔记(13)</title>
+    <link href="https://nari2021.github.io/my-blog/posts/f568f53a.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/f568f53a.html</id>
+    <published>2021-05-29T02:28:33.000Z</published>
+    <updated>2021-09-19T11:37:35.695Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python学习笔记" scheme="https://nari2021.github.io/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="Python" scheme="https://nari2021.github.io/my-blog/tags/Python/"/>
+    
+      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python学习笔记(12)</title>
     <link href="https://nari2021.github.io/my-blog/posts/ec73c47b.html"/>
     <id>https://nari2021.github.io/my-blog/posts/ec73c47b.html</id>
     <published>2021-05-27T02:12:51.000Z</published>
-    <updated>2021-05-28T11:19:27.062Z</updated>
+    <updated>2021-05-28T14:27:30.693Z</updated>
     
     <summary type="html">
     
