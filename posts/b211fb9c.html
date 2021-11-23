@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?https://nari2021.github.io/"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Python爬虫学习笔记-1 | ナリのブログへようこそ | 来ぬ人をまつほの浦の夕凪に焼くや藻塩の身もこがれつつ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="编程,学习笔记,Python,爬虫">
+    <meta name="description" content="Python爬虫学习笔记-1     基本概念     requests     cookies     代理     moji词典post     post数据来源     数据提取   基本概念 http超文本传输协议，默认端口号80。https：http+ssl（安全套接字层），即包含加密。默认端口号是443. 1234567891011121314151617181920212223242">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python爬虫学习笔记-1">
+<meta property="og:url" content="https://nari2021.github.io/my-blog/posts/b211fb9c.html">
+<meta property="og:site_name" content="ナリのブログへようこそ">
+<meta property="og:description" content="Python爬虫学习笔记-1     基本概念     requests     cookies     代理     moji词典post     post数据来源     数据提取   基本概念 http超文本传输协议，默认端口号80。https：http+ssl（安全套接字层），即包含加密。默认端口号是443. 1234567891011121314151617181920212223242">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-11-18T11:45:38.000Z">
+<meta property="article:modified_time" content="2021-11-23T12:01:07.046Z">
+<meta property="article:author" content="なりたぁん">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="爬虫">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="ナリのブログへようこそ" href="/my-blog/atom.xml">
+    
+    <link rel="shortcut icon" href="/my-blog/img/ressapannda.gif">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/my-blog/img/brand.jpg)">
+      <div class="brand">
+        <a href="/my-blog/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/my-blog/img/ressapannda.gif">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">なりたぁん</h5>
+          <a href="mailto:yuhongf@126.com" title="yuhongf@126.com" class="mail">yuhongf@126.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/nari2021/my-blog" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/blank" target="_blank" >
+                <i class="icon icon-lg icon-twitter"></i>
+                Twitter
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Python爬虫学习笔记-1</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Python爬虫学习笔记-1</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-11-18T11:45:38.000Z" itemprop="datePublished" class="page-time">
+  2021-11-18
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Python爬虫学习笔记-1"><span class="post-toc-number">1.</span> <span class="post-toc-text">Python爬虫学习笔记-1</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Python爬虫学习笔记-1"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Python爬虫学习笔记-1</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-11-18 19:45:38" datetime="2021-11-18T11:45:38.000Z"  itemprop="datePublished">2021-11-18</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Python爬虫学习笔记-1"><a href="#Python爬虫学习笔记-1" class="headerlink" title="Python爬虫学习笔记-1"></a>Python爬虫学习笔记-1</h1><ul style="list-style-type:circle;">
+    <li><a href="#1" style="text-decoration:none;">基本概念</a></li>
+    <li><a href="#2" style="text-decoration:none;">requests</a></li>
+    <li><a href="#3" style="text-decoration:none;">cookies</a></li>
+    <li><a href="#4" style="text-decoration:none;">代理</a></li>
+    <li><a href="#5" style="text-decoration:none;">moji词典post</a></li>
+    <li><a href="#6" style="text-decoration:none;">post数据来源</a></li>
+    <li><a href="#7" style="text-decoration:none;">数据提取</a></li>
+</ul>
+
+<p><span id="1">基本概念</span></p>
+<p>http超文本传输协议，默认端口号80。https：http+ssl（安全套接字层），即包含加密。默认端口号是443.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">常见的请求头和响应头</span><br><span class="line">Content-Type:(Type)请求内容类别 script jpg png等</span><br><span class="line">host:主机和端口号</span><br><span class="line">connection:连接类型  keep-alive 长链接 三次握手后就不需要再验证</span><br><span class="line">Ugrade-Insecure-Request:升级为https请求 1 0</span><br><span class="line">User-Agent:用户代理（浏览器名称）告诉浏览器 该浏览器类型版本号等信息</span><br><span class="line">			mozilla&#x2F;5.0 几乎所有浏览器都遵循此协议，用于传输该信息</span><br><span class="line">			提供系统信息和浏览器信息，（重要）</span><br><span class="line">referer:界面跳转处  即从哪里跳转过来的，防盗链（图片&#x2F;视频）</span><br><span class="line">cookie:保持状态</span><br><span class="line">Authorization:用于表示http协议中需要认真地认证信息。一般只会在自己测试的时候用上</span><br><span class="line"></span><br><span class="line">响应头</span><br><span class="line">set-cookie:对方浏览器设置cookie到用户浏览器的缓存</span><br><span class="line"></span><br><span class="line">常见状态码</span><br><span class="line">200 成功</span><br><span class="line">302 跳转</span><br><span class="line">303 post重定向</span><br><span class="line">307 get重定向</span><br><span class="line">403 资源不可用</span><br><span class="line">404 找不到页面</span><br><span class="line">500 服务器内部错误</span><br><span class="line">503 服务器由于维护或者负载过大未能响应。有可能会携带retry-after响应头，有可能因为爬虫频繁访问导		致服务器过载</span><br><span class="line"></span><br><span class="line">浏览器请求的过程：</span><br><span class="line">浏览器发送所有的请求并进行渲染。</span><br><span class="line">爬虫只发送指定请求，不会进行渲染</span><br><span class="line"></span><br><span class="line">骨骼文件 html静态文件</span><br><span class="line">肌肉文件 js&#x2F;ajax</span><br><span class="line">皮肤文件 css&#x2F;font&#x2F;图片</span><br><span class="line">从头往下找 document→其他类型文件找数据</span><br></pre></td></tr></table></figure>
+
+<p><span id="2">requests</span></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">r = requests.get(<span class="string">'https://api.github.com/events'</span>)</span><br><span class="line">print(r)</span><br><span class="line"></span><br><span class="line">r = requests.post(<span class="string">'https://httpbin.org/post'</span>, data=&#123;<span class="string">'key'</span>: <span class="string">'value'</span>&#125;)</span><br><span class="line">print(r)</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">using the params keyword argument. </span></span><br><span class="line"><span class="string">As an example, if you wanted to pass key1=value1 and key2=value2 </span></span><br><span class="line"><span class="string">to httpbin.org/get, you would use the following code:</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">payload = &#123;<span class="string">'key1'</span>: <span class="string">'value1'</span>, <span class="string">'key2'</span>: <span class="string">'value2'</span>&#125;</span><br><span class="line">r = requests.get(<span class="string">'https://httpbin.org/get'</span>, params=payload)</span><br><span class="line"><span class="comment"># can see that the URL has been correctly encoded by printing the URL</span></span><br><span class="line">print(r.url)</span><br><span class="line"></span><br><span class="line">payload = &#123;<span class="string">'key1'</span>: <span class="string">'value1'</span>, <span class="string">'key2'</span>: [<span class="string">'value2'</span>, <span class="string">'value3'</span>]&#125;</span><br><span class="line"></span><br><span class="line">r = requests.get(<span class="string">'https://httpbin.org/get'</span>, params=payload)</span><br><span class="line">print(r.url)</span><br><span class="line"></span><br><span class="line"><span class="comment"># response</span></span><br><span class="line">r = requests.get(<span class="string">'https://api.github.com/events'</span>)</span><br><span class="line">r.encoding = <span class="string">'utf-8'</span></span><br><span class="line">print(r.text)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 二进制响应内容</span></span><br><span class="line">print(r.content)  <span class="comment"># 返回值是b'[&#123;..&#125;]代表返回的是二进制内容</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># json格式</span></span><br><span class="line">r = requests.get(<span class="string">'https://api.github.com/events'</span>)</span><br><span class="line">print(r.json())</span><br><span class="line"><span class="comment"># 自带json解析</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 返回原始响应内容 stream=True需要设置</span></span><br><span class="line">r = requests.get(<span class="string">'https://api.github.com/events'</span>, stream=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">print(r.raw)</span><br><span class="line"></span><br><span class="line">print(r.raw.read(<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line">r = requests.get(<span class="string">'https://httpbin.org/get'</span>)</span><br><span class="line">print(r.status_code)</span><br><span class="line"><span class="comment"># 状态响应码 可以通过</span></span><br><span class="line"><span class="comment"># r.raise_for_status() #抛出异常</span></span><br><span class="line">print(r.headers)</span><br><span class="line"><span class="comment"># 访问headers属性</span></span><br><span class="line">r.headers.get(<span class="string">'Content-Type'</span>)</span><br><span class="line">print(r.headers[<span class="string">'Content-Type'</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># allow_redirect 重定向 history上一次的历史访问</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url=<span class="string">'http://www.baidu.com'</span></span><br><span class="line"></span><br><span class="line">response = requests.get(url)</span><br><span class="line"><span class="comment"># 手动设置编码格式</span></span><br><span class="line">response.encoding = <span class="string">'utf8'</span></span><br><span class="line"><span class="comment"># print(response.text)</span></span><br><span class="line">print(response.encoding)</span><br><span class="line">print(response.content.decode())  <span class="comment"># 二进制响应源码 可以进行decode</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 解决中文乱码问题</span></span><br><span class="line">response.content.decode()  <span class="comment"># 默认utf8</span></span><br><span class="line"><span class="comment"># response.content.decode("GBK")</span></span><br><span class="line"><span class="comment"># gb2312 等</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 常用属性</span></span><br><span class="line"><span class="comment"># print(response.url)</span></span><br><span class="line"><span class="comment"># print(response.status_code)</span></span><br><span class="line"><span class="comment"># print(response.request.headers)  # ！请求头</span></span><br><span class="line"><span class="comment"># print(response.headers)  # 响应头</span></span><br><span class="line"><span class="comment"># print(response.request.__cookies)  # 响应对应请求的cookie，返回cookiejar类型</span></span><br><span class="line"><span class="comment"># print(response.cookies)  # 响应的cookies</span></span><br><span class="line"><span class="comment"># print(response.json())  # 自动将json字符串类型转为python数据类型，dict或者list</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">上面的get方法由于没有修改user-agent</span></span><br><span class="line"><span class="string">所以会导致接收到的返回信息量小，被识别成了脚本</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="comment"># 发送带请求头的请求</span></span><br><span class="line">url = <span class="string">'https://www.baidu.com/s?'</span></span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 参数字典</span></span><br><span class="line">data = &#123;</span><br><span class="line">    <span class="string">'wd'</span>: <span class="string">'python'</span></span><br><span class="line">&#125;</span><br><span class="line">response1 = requests.get(url, headers=headers, params=data)</span><br><span class="line">print(len(response1.content))  <span class="comment"># 告诉服务器用的是浏览器</span></span><br><span class="line">print(response1.url)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">r'D:\Backup\桌面\baidu1.html'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> stream:</span><br><span class="line">    stream.write(response1.content)</span><br></pre></td></tr></table></figure>
+
+<p><span id="3">cookies</span></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 从浏览器中赋值user-agent和cookies</span></span><br><span class="line"><span class="comment"># 在header中携带cookies</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">url = <span class="string">'https://github.com/nari2021'</span></span><br><span class="line"><span class="comment"># 构建请求头</span></span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'</span>,</span><br><span class="line">    <span class="string">'Cookie'</span>: <span class="string">'ga=GA1.2.340065758.1586943648; _device_id=589968340f36ff816409b124bdc07683; _octo=GH1.1.575298197.1621002887; tz=Asia/Shanghai; has_recent_activity=1; user_session=TEqozV0IdjYptnZ3tDC4My37AEUGWDubLh0IkrM-yS6r5MNy; __Host-user_session_same_site=TEqozV0IdjYptnZ3tDC4My37AEUGWDubLh0IkrM-yS6r5MNy; tz=Asia/Shanghai; color_mode=&#123;"color_mode":"auto","light_theme":&#123;"name":"light","color_mode":"light"&#125;,"dark_theme":&#123;"name":"dark","color_mode":"dark"&#125;&#125;; logged_in=yes; dotcom_user=nari2021; _gh_sess=+kk2YACc2LfG4KGsEFAuvCXTTKnhzUvIEXLx8amDrzYFf5y6L+jdLOH2dyt9osyka8y+LGuRJedkcIbIkuBwMyVOU5dwJDTBG9BbKbWxA9dxXqoWRESOP0ddrt8G2OXitkyB/GK2/D6FHnVxizVuE53uiMaQq1pjygjTYSBWzrPi2U6YtOHmUL6LYZHDkgpMx/JYuAUlcS3i6sXNNJzjPkSMTQ+Bh4t6+/L3fHIaMJZYWFQpp2iW1VRKbXhegb1WGBv9d2Zx//T0rlF4/UKZZMnMG5R5L2tqFOU87KQ5M2SVoCS7aWuHXiwomKYYMPe430R4AkPjsWd8U0OeL+xkx41fbckrh5AxbRBYCMIjbGXMH6oEigVBscikjpYH5YutqMO/SPL6JFOZqDD15BK6LTpeE6n7mL5XI62VcWXH6JorvZ0Jxt6Yfz0tQHA37CWjWtRLBDSOsewjZezovpbRD3mMnl5UXARYzMBDKyRa1Gu/9QaVtI5CmY9V5i29SToMdq04Kz/zR2J/RD9pIsGMF/8D0AFsByZAw+/sOUANMpiyGxFuGxebr+WN3uoMq7s0LhExUkUAa8STT1UuXx+tzIQIluQKOzRKBP5CUsUa7pAqaP+NuIEFSzS9/MIcTrZolEZbWdv2349/kjeLsxjKsx0xsQC2oEgxOroP8PStaNYGaUYipJjaFvLbbwsUAWO3HQCfqx8W8GBZWMKSXRlGB54pZsinERb80mDO99grQFw=--ZL4Jvz7h44UsWX7p--BxNJGa7h1luAjw4WXQkzTA=='</span></span><br><span class="line">&#125;</span><br><span class="line">response = requests.get(url, headers=headers)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">r'D:\Backup\桌面\github_with.html'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(response.content)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">url = <span class="string">'https://github.com/nari2021'</span></span><br><span class="line"><span class="comment"># 构建请求头</span></span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 构建字典</span></span><br><span class="line">temp = <span class="string">' ga=GA1.2.340065758.1586943648; _device_id=589968340f36ff816409b124bdc07683; _octo=GH1.1.575298197.1621002887; tz=Asia/Shanghai; has_recent_activity=1; user_session=TEqozV0IdjYptnZ3tDC4My37AEUGWDubLh0IkrM-yS6r5MNy; __Host-user_session_same_site=TEqozV0IdjYptnZ3tDC4My37AEUGWDubLh0IkrM-yS6r5MNy; tz=Asia/Shanghai; color_mode=&#123;"color_mode":"auto","light_theme":&#123;"name":"light","color_mode":"light"&#125;,"dark_theme":&#123;"name":"dark","color_mode":"dark"&#125;&#125;; logged_in=yes; dotcom_user=nari2021; _gh_sess=+kk2YACc2LfG4KGsEFAuvCXTTKnhzUvIEXLx8amDrzYFf5y6L+jdLOH2dyt9osyka8y+LGuRJedkcIbIkuBwMyVOU5dwJDTBG9BbKbWxA9dxXqoWRESOP0ddrt8G2OXitkyB/GK2/D6FHnVxizVuE53uiMaQq1pjygjTYSBWzrPi2U6YtOHmUL6LYZHDkgpMx/JYuAUlcS3i6sXNNJzjPkSMTQ+Bh4t6+/L3fHIaMJZYWFQpp2iW1VRKbXhegb1WGBv9d2Zx//T0rlF4/UKZZMnMG5R5L2tqFOU87KQ5M2SVoCS7aWuHXiwomKYYMPe430R4AkPjsWd8U0OeL+xkx41fbckrh5AxbRBYCMIjbGXMH6oEigVBscikjpYH5YutqMO/SPL6JFOZqDD15BK6LTpeE6n7mL5XI62VcWXH6JorvZ0Jxt6Yfz0tQHA37CWjWtRLBDSOsewjZezovpbRD3mMnl5UXARYzMBDKyRa1Gu/9QaVtI5CmY9V5i29SToMdq04Kz/zR2J/RD9pIsGMF/8D0AFsByZAw+/sOUANMpiyGxFuGxebr+WN3uoMq7s0LhExUkUAa8STT1UuXx+tzIQIluQKOzRKBP5CUsUa7pAqaP+NuIEFSzS9/MIcTrZolEZbWdv2349/kjeLsxjKsx0xsQC2oEgxOroP8PStaNYGaUYipJjaFvLbbwsUAWO3HQCfqx8W8GBZWMKSXRlGB54pZsinERb80mDO99grQFw=--ZL4Jvz7h44UsWX7p--BxNJGa7h1luAjw4WXQkzTA=='</span></span><br><span class="line">cookie_list = temp.split(<span class="string">'; '</span>)</span><br><span class="line"><span class="comment"># 拆分成键值对</span></span><br><span class="line">cookies = &#123;&#125;  <span class="comment"># dict</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> cookie <span class="keyword">in</span> cookie_list:</span><br><span class="line">    cookies[cookie.split(<span class="string">'='</span>)[<span class="number">0</span>]] = cookie.split(<span class="string">'='</span>)[<span class="number">-1</span>]</span><br><span class="line">print(cookies)</span><br><span class="line"><span class="comment"># 获取键值对</span></span><br><span class="line"><span class="comment"># split拆分0赋给key  cookies[key] = split-1</span></span><br><span class="line"><span class="comment"># 可以优化为</span></span><br><span class="line"><span class="comment"># cookies = &#123;cookies[cookie.split('=')[0]]: cookie.split('=')[-1]</span></span><br><span class="line"><span class="comment"># for cookie in cookie_list&#125;</span></span><br><span class="line"></span><br><span class="line">response = requests.get(url, headers=headers, cookies=cookies)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">r'D:\Backup\桌面\github_with.html'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(response.content)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">    cookiejar对象转换</span></span><br><span class="line"><span class="string">    requests.utils.dict_from_cookiejar()</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">'http://www.baidu.com'</span></span><br><span class="line"></span><br><span class="line">response = requests.get(url)</span><br><span class="line"><span class="comment"># print(response.cookies)  # cookiejar对象</span></span><br><span class="line">dict_cookies = requests.utils.dict_from_cookiejar(response.cookies)</span><br><span class="line">print(dict_cookies)</span><br><span class="line"></span><br><span class="line">jar_cookies = requests.utils.cookiejar_from_dict(dict_cookies)</span><br><span class="line">print(jar_cookies)</span><br><span class="line"><span class="comment"># 平时一般用不上。</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="comment"># timeout参数</span></span><br><span class="line">url = <span class="string">'https://twitter.com'</span></span><br><span class="line">response = requests.get(url, timeout=<span class="number">10</span>)</span><br><span class="line">print(response.text)</span><br><span class="line"><span class="comment"># 超时会报错</span></span><br></pre></td></tr></table></figure>
+
+<p><span id="4">代理</span></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 代理服务器会帮助我们转发请求</span></span><br><span class="line"><span class="comment"># 知道转发的地址为正向代理</span></span><br><span class="line"><span class="comment"># 根据匿名度（对于目标服务器</span></span><br><span class="line"><span class="comment"># 1透明代理 2匿名代理 3高匿代理</span></span><br><span class="line"><span class="comment"># remote_addr = proxy ip</span></span><br><span class="line"><span class="comment"># http_via = proxy ip</span></span><br><span class="line"><span class="comment"># http_x_forwarded_for = your ip</span></span><br><span class="line"><span class="comment"># 2</span></span><br><span class="line"><span class="comment"># remote_addr = proxy ip</span></span><br><span class="line"><span class="comment"># http_via = proxy ip</span></span><br><span class="line"><span class="comment"># http_x_forwarded_for = proxy ip</span></span><br><span class="line"><span class="comment"># 3</span></span><br><span class="line"><span class="comment"># remote_addr = proxy ip</span></span><br><span class="line"><span class="comment"># http_via = not determined</span></span><br><span class="line"><span class="comment"># http_x_forwarded_f  or = not determined</span></span><br><span class="line"><span class="comment"># 三者在服务器收到的请求头如此</span></span><br><span class="line"><span class="comment"># 一般使用高匿代理</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 根据协议</span></span><br><span class="line"><span class="comment"># http https socks(只是对包进行转发</span></span><br><span class="line"><span class="comment"># 一般只用前两种</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用代理proxies = proxies(字典</span></span><br><span class="line"><span class="comment"># 格式: 'http': 'http://xxxx'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">'http://www.baidu.com'</span></span><br><span class="line"></span><br><span class="line">proxies = &#123;</span><br><span class="line">    <span class="string">'http'</span>: <span class="string">'http://112.13.183.101:9091'</span></span><br><span class="line">&#125;</span><br><span class="line">response = requests.get(url, proxies=proxies)</span><br><span class="line"></span><br><span class="line">print(response.text)</span><br><span class="line"><span class="comment"># 代理使用成功不会报错，能成功获取响应</span></span><br><span class="line"><span class="comment"># 如果失败，1卡住2报错</span></span><br></pre></td></tr></table></figure>
+
+<p><span id="5">moji词典post</span></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># verify参数忽略CA证书</span></span><br><span class="line"><span class="comment"># verify = false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># post请求 传入data</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">King</span><span class="params">(object)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, word)</span>:</span></span><br><span class="line">        self.url = <span class="string">'https://api.mojidict.com/parse/functions/search_v3'</span></span><br><span class="line">        self.headers = &#123;</span><br><span class="line">            <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'</span></span><br><span class="line">        &#125;</span><br><span class="line">        self.data = &#123;</span><br><span class="line">            <span class="string">"langEnv"</span>: <span class="string">"zh-CN_ja"</span>,</span><br><span class="line">            <span class="string">"searchText"</span>: word,</span><br><span class="line">            <span class="string">"_ApplicationId"</span>: <span class="string">"E62VyFVLMiW7kvbtVq3p"</span>,</span><br><span class="line">            <span class="string">"_ClientVersion"</span>: <span class="string">"js2.12.0"</span>,</span><br><span class="line">            <span class="string">"_InstallationId"</span>: <span class="string">"7d959a18-48c4-243c-7486-632147466544"</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_data</span><span class="params">(self)</span>:</span></span><br><span class="line">        response = requests.post(self.url, data=self.data, headers=self.headers)</span><br><span class="line">        <span class="keyword">return</span> response.content</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="comment"># 编写爬虫逻辑</span></span><br><span class="line">        <span class="comment"># url headers</span></span><br><span class="line">        <span class="comment"># data字典</span></span><br><span class="line">        <span class="comment"># 发送请求 获取响应 数据解析</span></span><br><span class="line">        response = self.get_data()</span><br><span class="line">        self.parse_data(response)</span><br><span class="line"></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse_data</span><span class="params">(data)</span>:</span></span><br><span class="line">        dict_data = json.loads(data)</span><br><span class="line">        print(dict_data[<span class="string">'result'</span>][<span class="string">'searchResults'</span>][<span class="number">0</span>][<span class="string">'excerpt'</span>])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    word = input(<span class="string">'请输入单词:'</span>)</span><br><span class="line">    king = King(word)</span><br><span class="line">    king.run()</span><br><span class="line">    <span class="comment"># with open(r'D:\Backup\桌面\baidu1.html', 'wb') as stream:</span></span><br><span class="line">    <span class="comment">#     stream.write(king.get_data())</span></span><br></pre></td></tr></table></figure>
+
+<p><span id="6">数据来源</span></p>
+<ul>
+    <li>固定值</li> 
+    抓包比较不变值
+    <li>输入值</li> 
+    抓包比较根据自身变化值
+    <li>预设值1</li> 
+    静态值，需要提前从静态html中获取（正则）。例如:token值，可能会被存储在页面html代码内部，可以通过正则表达式获取。
+    <li>预设值2</li>
+    提前发请求，需要对指定地址单独发送请求获取数据
+    <li>客户端中生成的</li>
+    分析js等，模拟生成数据。时间戳等
+</ul>
+
+<p><span id="7">session</span></p>
+<p>状态保持，能够自动处理发送请求中获取响应中产生的cookie，作用:自动保持cookie。连续请求中，下一次请求会带上前一次的cookie。使用方式:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">session = requests.session()</span><br><span class="line"></span><br><span class="line">response = session.get().../post...</span><br><span class="line"><span class="comment"># 与requests. 基本一致，但是能保持cookie</span></span><br></pre></td></tr></table></figure>
+
+<p>使用session进行状态保持</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="comment"># 正则</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">login</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># session</span></span><br><span class="line">    session = requests.session()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># headers</span></span><br><span class="line">    session.headers = &#123;</span><br><span class="line">        <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment"># url1获取token</span></span><br><span class="line">    url1 = <span class="string">'https://github.com/session'</span></span><br><span class="line">    <span class="comment"># 发送请求获取响应</span></span><br><span class="line">    res_1 = session.get(url1).content.decode()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 正则提取</span></span><br><span class="line">    token = re.findall(<span class="string">'name="authenticity_token" value="(.*?)"'</span>, res_1)</span><br><span class="line">    <span class="comment"># ['gWvx84OLuWvboCCvBUKlZj3vCflbuOdeqKxAqMe4uxubulvNCkkMhVoRIRL1aRzrgD3TAxanL3I79ldEzaTL/g==']</span></span><br><span class="line">    <span class="comment"># .任何 *所有 ？非贪婪</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment"># url2-登录</span></span><br><span class="line">    url2 = <span class="string">'https://github.com/session'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 构建表单数据</span></span><br><span class="line">    data = &#123;</span><br><span class="line">        <span class="string">"commit"</span>: <span class="string">"Sign in"</span>,</span><br><span class="line">        <span class="string">"authenticity_token"</span>: token,</span><br><span class="line">        <span class="string">"login"</span>: <span class="string">"yuhongf@126.com"</span>,</span><br><span class="line">        <span class="string">"password"</span>: <span class="string">"yuhongf990319?"</span>,</span><br><span class="line">        <span class="string">"webauthn - support"</span>: <span class="string">"supported"</span></span><br><span class="line">    &#125;</span><br><span class="line">    print(data)</span><br><span class="line">    <span class="comment"># 发送请求登录</span></span><br><span class="line">    session.post(url2, data=data)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># url3 验证</span></span><br><span class="line">    url3 = <span class="string">'https://github.com/nari2021'</span></span><br><span class="line">    response = session.get(url3)</span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">r'D:\Backup\桌面\test1.html'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> stream:</span><br><span class="line">        stream.write(response.content)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    login()</span><br></pre></td></tr></table></figure>
+
+<p><span id="7">数据提取</span></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">    数据提取</span></span><br><span class="line"><span class="string">    响应分类</span></span><br><span class="line"><span class="string">        结构化</span></span><br><span class="line"><span class="string">            json数据</span></span><br><span class="line"><span class="string">                json模块</span></span><br><span class="line"><span class="string">                re模块</span></span><br><span class="line"><span class="string">                jsonpath模块</span></span><br><span class="line"><span class="string">            xml数据（少数</span></span><br><span class="line"><span class="string">                re模块</span></span><br><span class="line"><span class="string">                lxml模块</span></span><br><span class="line"><span class="string">        非结构化</span></span><br><span class="line"><span class="string">            html</span></span><br><span class="line"><span class="string">                re正则</span></span><br><span class="line"><span class="string">                lxml模块 xpath语法</span></span><br><span class="line"><span class="string">                beautiful soup</span></span><br><span class="line"><span class="string">                pyquery（css选择器</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="comment"># jsonpath 多层嵌套的复杂字符直接提取</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> jsonpath <span class="keyword">import</span> jsonpath</span><br><span class="line"><span class="comment"># 语法</span></span><br><span class="line"><span class="comment"># ret = jsonpath(a,'jsonpath语法字符串')</span></span><br><span class="line"><span class="comment"># 常用 三个</span></span><br><span class="line"><span class="comment"># $ 根节点 最外层大括号</span></span><br><span class="line"><span class="comment"># . 直接子节点</span></span><br><span class="line"><span class="comment"># ..内部任意位置，子孙节点</span></span><br><span class="line">data = &#123;<span class="string">'key1'</span>: &#123;<span class="string">'key2'</span>: &#123;<span class="string">'key3'</span>: &#123;<span class="string">'key4'</span>: &#123;<span class="string">'ket5'</span>: &#123;<span class="string">'key6'</span>: <span class="string">'python'</span>&#125;&#125;&#125;&#125;&#125;&#125;</span><br><span class="line">print(data)</span><br><span class="line"></span><br><span class="line"><span class="comment"># jsonpath返回结果为列表 需要使用索引</span></span><br><span class="line">print(jsonpath(data, <span class="string">'$..key6'</span>)[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># w3school xpath语法 xml html区别</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 谷歌浏览器xpath helper插件安装和使用</span></span><br><span class="line"><span class="comment"># //相对路径 html/head/title //title</span></span><br><span class="line"><span class="comment"># .当前 ..上一层</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># //tittle/text()</span></span><br><span class="line"><span class="comment"># //link/@href 选取属性 用于数据提取，永远放在最后</span></span><br></pre></td></tr></table></figure>
+
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2021-11-23T12:01:07.046Z" itemprop="dateUpdated">2021-11-23 20:01:07</time>
+</span><br>
+
+
+        
+        本文永久链接：<a href="/my-blog/posts/b211fb9c.html" target="_blank" rel="external">https://nari2021.github.io/my-blog/posts/b211fb9c.html</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://nari2021.github.io/my-blog">
+            <img src="/my-blog/img/ressapannda.gif" alt="なりたぁん">
+            なりたぁん
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/b211fb9c.html&title=《Python爬虫学习笔记-1》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/b211fb9c.html&title=《Python爬虫学习笔记-1》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/b211fb9c.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python爬虫学习笔记-1》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/b211fb9c.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/b211fb9c.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/my-blog/posts/2b18aa26.html" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Python爬虫学习笔记-2</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/my-blog/posts/1efe1965.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">JS学习笔记-4</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "CbPotriRy5GHii9V5fWXjhcB-MdYXbMMI",
+            appKey: "0Q07HYS8853MtyGeEIIps7Sn",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        要恰饭的嘛，呜呜
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/my-blog/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/my-blog/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>なりたぁん &copy; 2020 - 2021</span>
+            <span>
+                
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/b211fb9c.html&title=《Python爬虫学习笔记-1》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/b211fb9c.html&title=《Python爬虫学习笔记-1》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/b211fb9c.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python爬虫学习笔记-1》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/b211fb9c.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/b211fb9c.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nari2021.github.io/my-blog/posts/b211fb9c.html" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/my-blog/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '(つェ⊂)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

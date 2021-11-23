@@ -6,7 +6,7 @@
   <link href="/my-blog/atom.xml" rel="self"/>
   
   <link href="https://nari2021.github.io/my-blog/"/>
-  <updated>2021-10-07T13:35:40.300Z</updated>
+  <updated>2021-11-23T12:01:58.457Z</updated>
   <id>https://nari2021.github.io/my-blog/</id>
   
   <author>
@@ -17,11 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>开发日志1-3</title>
-    <link href="https://nari2021.github.io/my-blog/posts/67b180d9.html"/>
-    <id>https://nari2021.github.io/my-blog/posts/67b180d9.html</id>
-    <published>2021-10-07T12:20:40.000Z</published>
-    <updated>2021-10-07T13:35:40.300Z</updated>
+    <title>Python爬虫学习笔记-2</title>
+    <link href="https://nari2021.github.io/my-blog/posts/2b18aa26.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/2b18aa26.html</id>
+    <published>2021-11-23T12:01:58.000Z</published>
+    <updated>2021-11-23T12:01:58.457Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python爬虫学习笔记-1</title>
+    <link href="https://nari2021.github.io/my-blog/posts/b211fb9c.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/b211fb9c.html</id>
+    <published>2021-11-18T11:45:38.000Z</published>
+    <updated>2021-11-23T12:01:07.046Z</updated>
     
     <summary type="html">
     
@@ -29,11 +44,173 @@
       
         
         
-          &lt;h1 style=&quot;font-size:1.5em;margin:0 0&quot;&gt;关于文章格式的设置说明&lt;/h1&gt;
-
-&lt;ul style=&quot;list-style:circle;&quot;&gt;
-    &lt;li&gt;
-        &lt;span style=&quot;font-size:1.3em&quot;
+          &lt;h1 id=&quot;Python爬虫学习笔记-1&quot;&gt;&lt;a href=&quot;#Python爬虫学习笔记-1&quot; class=&quot;headerlink&quot; title=&quot;Python爬虫学习笔记-1&quot;&gt;&lt;/a&gt;Python爬虫学习笔记-1&lt;/h1&gt;&lt;ul
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python学习笔记" scheme="https://nari2021.github.io/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Python" scheme="https://nari2021.github.io/my-blog/tags/Python/"/>
+    
+      <category term="爬虫" scheme="https://nari2021.github.io/my-blog/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS学习笔记-4</title>
+    <link href="https://nari2021.github.io/my-blog/posts/1efe1965.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/1efe1965.html</id>
+    <published>2021-10-20T07:04:27.000Z</published>
+    <updated>2021-11-18T13:24:15.836Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JavaScript学习笔记-4&quot;&gt;&lt;a href=&quot;#JavaScript学习笔记-4&quot; class=&quot;headerlink&quot; title=&quot;JavaScript学习笔记-4&quot;&gt;&lt;/a&gt;JavaScript学习笔记-4&lt;/h1&gt;&lt;ul
+        
+      
+    
+    </summary>
+    
+    
+      <category term="web前端学习笔记" scheme="https://nari2021.github.io/my-blog/categories/web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="HTML" scheme="https://nari2021.github.io/my-blog/tags/HTML/"/>
+    
+      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="JavaScript" scheme="https://nari2021.github.io/my-blog/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS学习笔记-3</title>
+    <link href="https://nari2021.github.io/my-blog/posts/809a8cc6.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/809a8cc6.html</id>
+    <published>2021-10-18T10:06:16.000Z</published>
+    <updated>2021-10-20T07:05:39.304Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JavaScript学习笔记-3&quot;&gt;&lt;a href=&quot;#JavaScript学习笔记-3&quot; class=&quot;headerlink&quot; title=&quot;JavaScript学习笔记-3&quot;&gt;&lt;/a&gt;JavaScript学习笔记-3&lt;/h1&gt;&lt;ul
+        
+      
+    
+    </summary>
+    
+    
+      <category term="web前端学习笔记" scheme="https://nari2021.github.io/my-blog/categories/web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="HTML" scheme="https://nari2021.github.io/my-blog/tags/HTML/"/>
+    
+      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="JavaScript" scheme="https://nari2021.github.io/my-blog/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS学习笔记-2</title>
+    <link href="https://nari2021.github.io/my-blog/posts/f79dbc50.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/f79dbc50.html</id>
+    <published>2021-10-16T05:25:11.000Z</published>
+    <updated>2021-10-18T10:05:40.238Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JavaScript学习笔记-2&quot;&gt;&lt;a href=&quot;#JavaScript学习笔记-2&quot; class=&quot;headerlink&quot; title=&quot;JavaScript学习笔记-2&quot;&gt;&lt;/a&gt;JavaScript学习笔记-2&lt;/h1&gt;&lt;ul
+        
+      
+    
+    </summary>
+    
+    
+      <category term="web前端学习笔记" scheme="https://nari2021.github.io/my-blog/categories/web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="HTML" scheme="https://nari2021.github.io/my-blog/tags/HTML/"/>
+    
+      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="JavaScript" scheme="https://nari2021.github.io/my-blog/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS学习笔记-1</title>
+    <link href="https://nari2021.github.io/my-blog/posts/6e94edea.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/6e94edea.html</id>
+    <published>2021-10-14T10:07:01.000Z</published>
+    <updated>2021-10-16T05:31:04.260Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JavaScript学习笔记-1&quot;&gt;&lt;a href=&quot;#JavaScript学习笔记-1&quot; class=&quot;headerlink&quot; title=&quot;JavaScript学习笔记-1&quot;&gt;&lt;/a&gt;JavaScript学习笔记-1&lt;/h1&gt;&lt;ul
+        
+      
+    
+    </summary>
+    
+    
+      <category term="web前端学习笔记" scheme="https://nari2021.github.io/my-blog/categories/web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="HTML" scheme="https://nari2021.github.io/my-blog/tags/HTML/"/>
+    
+      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="JavaScript" scheme="https://nari2021.github.io/my-blog/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开发日志1-3</title>
+    <link href="https://nari2021.github.io/my-blog/posts/67b180d9.html"/>
+    <id>https://nari2021.github.io/my-blog/posts/67b180d9.html</id>
+    <published>2021-10-07T12:20:40.000Z</published>
+    <updated>2021-10-07T13:43:25.859Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;关于文章格式的设置说明&quot;&gt;&lt;a href=&quot;#关于文章格式的设置说明&quot; class=&quot;headerlink&quot; title=&quot;关于文章格式的设置说明&quot;&gt;&lt;/a&gt;关于文章格式的设置说明&lt;/h1&gt;&lt;ul style=&quot;list-style:circle;&quot;&gt;
+   
         
       
     
@@ -52,7 +229,7 @@
     <link href="https://nari2021.github.io/my-blog/posts/6e7fa591.html"/>
     <id>https://nari2021.github.io/my-blog/posts/6e7fa591.html</id>
     <published>2021-10-06T16:54:24.000Z</published>
-    <updated>2021-10-07T13:21:38.193Z</updated>
+    <updated>2021-10-14T13:10:42.169Z</updated>
     
     <summary type="html">
     
@@ -60,8 +237,7 @@
       
         
         
-          &lt;p&gt;&lt;font face=&quot;宋体&quot;&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;h1
+          &lt;h1 id=&quot;网页设计实例学习笔记-2&quot;&gt;&lt;a href=&quot;#网页设计实例学习笔记-2&quot; class=&quot;headerlink&quot; title=&quot;网页设计实例学习笔记(2)&quot;&gt;&lt;/a&gt;网页设计实例学习笔记(2)&lt;/h1&gt;&lt;ul
         
       
     
@@ -461,201 +637,6 @@
         
         
           &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python学习笔记" scheme="https://nari2021.github.io/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Python" scheme="https://nari2021.github.io/my-blog/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python学习笔记(8)</title>
-    <link href="https://nari2021.github.io/my-blog/posts/44fb5f6b.html"/>
-    <id>https://nari2021.github.io/my-blog/posts/44fb5f6b.html</id>
-    <published>2021-05-22T01:12:46.000Z</published>
-    <updated>2021-05-22T09:37:48.740Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;文件的批量复制&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python学习笔记" scheme="https://nari2021.github.io/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Python" scheme="https://nari2021.github.io/my-blog/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python学习笔记(7)</title>
-    <link href="https://nari2021.github.io/my-blog/posts/c36343a4.html"/>
-    <id>https://nari2021.github.io/my-blog/posts/c36343a4.html</id>
-    <published>2021-05-21T01:39:16.000Z</published>
-    <updated>2021-05-21T10:34:20.092Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;文件操作&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python学习笔记" scheme="https://nari2021.github.io/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Python" scheme="https://nari2021.github.io/my-blog/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python学习笔记(6)</title>
-    <link href="https://nari2021.github.io/my-blog/posts/da7872e5.html"/>
-    <id>https://nari2021.github.io/my-blog/posts/da7872e5.html</id>
-    <published>2021-05-20T02:33:51.000Z</published>
-    <updated>2021-05-20T15:15:36.624Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python学习笔记" scheme="https://nari2021.github.io/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Python" scheme="https://nari2021.github.io/my-blog/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python学习笔记(5)</title>
-    <link href="https://nari2021.github.io/my-blog/posts/f1552126.html"/>
-    <id>https://nari2021.github.io/my-blog/posts/f1552126.html</id>
-    <published>2021-05-19T01:38:56.000Z</published>
-    <updated>2021-05-19T16:01:19.985Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python学习笔记" scheme="https://nari2021.github.io/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Python" scheme="https://nari2021.github.io/my-blog/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python学习笔记(4)</title>
-    <link href="https://nari2021.github.io/my-blog/posts/e84e1067.html"/>
-    <id>https://nari2021.github.io/my-blog/posts/e84e1067.html</id>
-    <published>2021-05-18T01:39:06.000Z</published>
-    <updated>2021-05-18T15:14:22.596Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;1 列表的添加&lt;/p&gt;
-&lt;p&gt;append 添加单个元素 +号直接连接 extend拓展。&lt;/p&gt;
-&lt;figure class=&quot;image-bubble&quot;&gt;
-                &lt;div class=&quot;img-lightbox&quot;&gt;
-             
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python学习笔记" scheme="https://nari2021.github.io/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="编程" scheme="https://nari2021.github.io/my-blog/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="学习笔记" scheme="https://nari2021.github.io/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="Python" scheme="https://nari2021.github.io/my-blog/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python学习笔记(3)</title>
-    <link href="https://nari2021.github.io/my-blog/posts/a70f86a0.html"/>
-    <id>https://nari2021.github.io/my-blog/posts/a70f86a0.html</id>
-    <published>2021-05-16T01:07:46.000Z</published>
-    <updated>2021-05-17T05:14:16.935Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;由于多次保存之后都不知道为什么被清了。所以只剩下截图了。&lt;/p&gt;
-&lt;figure class=&quot;image-bubble&quot;&gt;
-                &lt;div class=&quot;img-lightbox&quot;&gt;
-                    &lt;div
         
       
     
