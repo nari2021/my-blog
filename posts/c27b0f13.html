@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?https://nari2021.github.io/"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Python爬虫学习笔记-4 | ナリのブログへようこそ | 来ぬ人をまつほの浦の夕凪に焼くや藻塩の身もこがれつつ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="编程,学习笔记,Python,爬虫">
+    <meta name="description" content="Python爬虫学习笔记-4     中间件selenium     分布式redis     京东图书爬虫实现     杂项   中间件selenium 主要用于渲染后的源码方便提取数据。 123456789101112131415import timefrom selenium import webdriverfrom scrapy.http import HtmlResponseclass">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python爬虫学习笔记-4">
+<meta property="og:url" content="https://nari2021.github.io/my-blog/posts/c27b0f13.html">
+<meta property="og:site_name" content="ナリのブログへようこそ">
+<meta property="og:description" content="Python爬虫学习笔记-4     中间件selenium     分布式redis     京东图书爬虫实现     杂项   中间件selenium 主要用于渲染后的源码方便提取数据。 123456789101112131415import timefrom selenium import webdriverfrom scrapy.http import HtmlResponseclass">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-12-14T09:09:47.000Z">
+<meta property="article:modified_time" content="2021-12-29T13:18:32.654Z">
+<meta property="article:author" content="なりたぁん">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="爬虫">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="ナリのブログへようこそ" href="/my-blog/atom.xml">
+    
+    <link rel="shortcut icon" href="/my-blog/img/ressapannda.gif">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/my-blog/img/brand.jpg)">
+      <div class="brand">
+        <a href="/my-blog/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/my-blog/img/ressapannda.gif">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">なりたぁん</h5>
+          <a href="mailto:yuhongf@126.com" title="yuhongf@126.com" class="mail">yuhongf@126.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/nari2021/my-blog" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/my-blog/blank" target="_blank" >
+                <i class="icon icon-lg icon-twitter"></i>
+                Twitter
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Python爬虫学习笔记-4</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Python爬虫学习笔记-4</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-12-14T09:09:47.000Z" itemprop="datePublished" class="page-time">
+  2021-12-14
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Python爬虫学习笔记-4"><span class="post-toc-number">1.</span> <span class="post-toc-text">Python爬虫学习笔记-4</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Python爬虫学习笔记-4"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Python爬虫学习笔记-4</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-12-14 17:09:47" datetime="2021-12-14T09:09:47.000Z"  itemprop="datePublished">2021-12-14</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/my-blog/categories/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python学习笔记</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Python爬虫学习笔记-4"><a href="#Python爬虫学习笔记-4" class="headerlink" title="Python爬虫学习笔记-4"></a>Python爬虫学习笔记-4</h1><ul style="list-style-type:circle;">
+    <li><a href="#1" style="text-decoration:none;">中间件selenium</a></li>
+    <li><a href="#2" style="text-decoration:none;">分布式redis</a></li>
+    <li><a href="#3" style="text-decoration:none;">京东图书爬虫实现</a></li>
+    <li><a href="#4" style="text-decoration:none;">杂项</a></li>
+</ul>
+
+<p><span id="1">中间件selenium</span></p>
+<p>主要用于渲染后的源码方便提取数据。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> scrapy.http <span class="keyword">import</span> HtmlResponse</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SeleniumMiddleware</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">process_request</span><span class="params">(self, request, spider)</span>:</span></span><br><span class="line">        url = request.url</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'daydata'</span> <span class="keyword">in</span> url:</span><br><span class="line">            driver = webdriver.Chrome()</span><br><span class="line">            driver.get(url)</span><br><span class="line">            time.sleep(<span class="number">3</span>)</span><br><span class="line">            data = driver.page_source</span><br><span class="line">            driver.close()</span><br><span class="line">            <span class="comment"># 创建响应对象</span></span><br><span class="line">            res = HtmlResponse(url=url,body=data,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">            <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+
+<p><span id="2">分布式redis</span></p>
+<p>由于后续部分，包括前面一些内容代码分布散乱不好做笔记所以这部分笔记可能会有所减少。</p>
+<p>redis启动，控制台中redis目录运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-server.exe redis.windows.conf</span><br></pre></td></tr></table></figure>
+
+<p>再重新新建一个cmd窗口，以下同数据库操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">redis-cli.exe -h 127.0.0.1 -p 6379</span><br><span class="line">set myKey abc</span><br><span class="line">get myKey</span><br></pre></td></tr></table></figure>
+
+<p>用redis desktopmanager，可视化后实现分布式。</p>
+<p>主要步骤:</p>
+<p>先编写scrapy普通爬虫</p>
+<p>1 导入分布式爬虫类</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> scrapy_redis.spiders <span class="keyword">import</span> RedisSpider</span><br></pre></td></tr></table></figure>
+
+<p>2 继承分布式爬虫类</p>
+<p>将原本编写的class的括号中类名修改</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">xxxSpider</span><span class="params">(RedisSpider)</span>：</span></span><br></pre></td></tr></table></figure>
+
+<p>3 注销start_url和allowed_domains</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 原有:</span></span><br><span class="line">name = <span class="string">'xxx'</span></span><br><span class="line"><span class="comment"># 注释掉后续两个</span></span><br><span class="line"><span class="comment"># allowed_url = []</span></span><br><span class="line"><span class="comment"># start_url = []</span></span><br></pre></td></tr></table></figure>
+
+<p>4 设置redis-key</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-key = <span class="string">'xxx'</span></span><br></pre></td></tr></table></figure>
+
+<p>5 设置init</p>
+<p>（copy即可</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">	domain = kwargs.pop(<span class="string">'domain'</span>,<span class="string">''</span>)  <span class="comment"># 如果pop失败则为空</span></span><br><span class="line">	self.allowed_domains = list(filter(<span class="literal">None</span>, domain.split(<span class="string">','</span>)))  </span><br><span class="line">    <span class="comment"># 转为list对象，分割是为了在命令行中</span></span><br><span class="line">    <span class="comment"># scrapy runspider xxx.py domain = 'xxx.com,xx.cn' </span></span><br><span class="line">    <span class="comment"># 此处分割字符串</span></span><br><span class="line">    super(xxxSpider,self).__init__(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+
+<p>6 copy settings，注释原本的settings并修改。</p>
+<p>最后启动</p>
+<p><span id="3">京东图书爬虫实现</span></p>
+<p>import selenium的时候，由于环境问题可能需要在当前路径之下pip install</p>
+<p>涉及一些杂项知识点，获取兄弟节点xpath</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;a[@id &#x3D; &quot;2&quot;]&#x2F;following-sibling::a[1]</span><br></pre></td></tr></table></figure>
+
+<p>普通爬虫实现</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> JD.items <span class="keyword">import</span> JdItem</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BookSpider</span><span class="params">(scrapy.Spider)</span>:</span></span><br><span class="line">    name = <span class="string">'book'</span></span><br><span class="line">    allowed_domains = [<span class="string">'jd.com'</span>]</span><br><span class="line">    start_urls = [<span class="string">'https://book.jd.com/booksort.html'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(self, response)</span>:</span></span><br><span class="line">        <span class="comment"># 获取所有图书大分类节点列表</span></span><br><span class="line">        big_node_list = response.xpath(<span class="string">'//*[@id="booksort"]/div[2]/dl/dt/a'</span>)</span><br><span class="line">        <span class="keyword">for</span> big_node <span class="keyword">in</span> big_node_list[:<span class="number">1</span>]:</span><br><span class="line">            big_category = big_node.xpath(<span class="string">'./text()'</span>).extract_first()</span><br><span class="line">            big_category_link = response.urljoin(big_node.xpath(<span class="string">'./@href'</span>).extract_first())</span><br><span class="line">            <span class="comment"># 获取小分类节点列表</span></span><br><span class="line">            small_node_list = big_node.xpath(<span class="string">'../following-sibling::dd/em/a'</span>)</span><br><span class="line">            <span class="keyword">for</span> small_node <span class="keyword">in</span> small_node_list[:<span class="number">1</span>]:</span><br><span class="line">                temp = &#123;&#125;</span><br><span class="line">                temp[<span class="string">'big_category'</span>] = big_category</span><br><span class="line">                temp[<span class="string">'big_category_link'</span>] = big_category_link</span><br><span class="line">                temp[<span class="string">'small_category'</span>] = small_node.xpath(<span class="string">'./text()'</span>).extract_first()</span><br><span class="line">                temp[<span class="string">'small_category_link'</span>] = response.urljoin(small_node.xpath(<span class="string">'./@href'</span>).extract_first())</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 点击小分类连接</span></span><br><span class="line">                headers = &#123;</span><br><span class="line">                    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'</span></span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">yield</span> scrapy.Request(</span><br><span class="line">                    url=temp[<span class="string">'small_category_link'</span>],</span><br><span class="line">                    headers=headers,</span><br><span class="line">                    callback=self.parse_book_list,</span><br><span class="line">                    meta=&#123;<span class="string">'py'</span>: temp&#125;</span><br><span class="line">                )</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse_book_list</span><span class="params">(self, response)</span>:</span></span><br><span class="line">        temp = response.meta[<span class="string">'py'</span>]</span><br><span class="line">        book_list = response.xpath(<span class="string">'//*[@id="J_goodsList"]/ul/li/div'</span>)</span><br><span class="line">        <span class="keyword">for</span> book <span class="keyword">in</span> book_list:</span><br><span class="line">            item = JdItem()</span><br><span class="line">            <span class="keyword">if</span> book.xpath(<span class="string">'./div[4]/span[1]/a/text()'</span>).extract_first() <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            item[<span class="string">'big_category'</span>] = temp[<span class="string">'big_category'</span>]</span><br><span class="line">            item[<span class="string">'big_category_link'</span>] = temp[<span class="string">'big_category_link'</span>]</span><br><span class="line">            item[<span class="string">'small_category'</span>]=temp[<span class="string">'small_category'</span>]</span><br><span class="line">            item[<span class="string">'small_category_link'</span>]=temp[<span class="string">'small_category_link'</span>]</span><br><span class="line">            item[<span class="string">'book_name'</span>] = book.xpath(<span class="string">'./div[3]/a/em/text()'</span>).extract_first()</span><br><span class="line">            item[<span class="string">'author'</span>] = book.xpath(<span class="string">'./div[4]/span[1]/a/text()'</span>).extract_first()</span><br><span class="line">            item[<span class="string">'link'</span>] = response.urljoin(book.xpath(<span class="string">'./div[3]/a/@href'</span>).extract_first())</span><br><span class="line">            item[<span class="string">'price'</span>] = book.xpath(<span class="string">'./div[2]/strong/i/text()'</span>).extract_first()</span><br><span class="line">            item[<span class="string">'book_id'</span>] = book.xpath(<span class="string">'./../@data-sku'</span>).extract_first()</span><br><span class="line">            <span class="keyword">yield</span> item</span><br><span class="line">        <span class="comment"># 翻页</span></span><br><span class="line">        next = response.xpath(<span class="string">'//*[@id="J_bottomPage"]/span[1]/a[9]/@onclick'</span>).extract_first()</span><br><span class="line">        <span class="keyword">if</span> next != <span class="literal">None</span>:</span><br><span class="line">            result = re.search(<span class="string">r'[0-9]+'</span>, next)</span><br><span class="line">            next_url = temp[<span class="string">'small_category_link'</span>] + <span class="string">'?page='</span> + result.group()</span><br><span class="line">            print(next_url)</span><br><span class="line"></span><br><span class="line">            headers = &#123;</span><br><span class="line">                <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">yield</span> scrapy.Request(</span><br><span class="line">                url=next_url,</span><br><span class="line">                headers=headers,</span><br><span class="line">                callback=self.parse_book_list,</span><br><span class="line">                meta=&#123;<span class="string">'py'</span>: temp&#125;</span><br><span class="line">            )</span><br></pre></td></tr></table></figure>
+
+<p>selenium中间件代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Define here the models for your spider middleware</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># See documentation in:</span></span><br><span class="line"><span class="comment"># https://docs.scrapy.org/en/latest/topics/spider-middleware.html</span></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> scrapy.http <span class="keyword">import</span> HtmlResponse</span><br><span class="line"><span class="keyword">from</span> scrapy <span class="keyword">import</span> signals</span><br><span class="line"></span><br><span class="line"><span class="comment"># useful for handling different item types with a single interface</span></span><br><span class="line"><span class="keyword">from</span> itemadapter <span class="keyword">import</span> is_item, ItemAdapter</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SeleniumMiddleware</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">process_request</span><span class="params">(self, request, spider)</span>:</span></span><br><span class="line">        url = request.url</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'booksort'</span> <span class="keyword">in</span> url:</span><br><span class="line">            option = webdriver.ChromeOptions()</span><br><span class="line">            option.add_argument(<span class="string">'--headless'</span>)</span><br><span class="line">            option.add_argument(<span class="string">'--disable-gpu'</span>)</span><br><span class="line">            driver = webdriver.Chrome(chrome_options=option)</span><br><span class="line">            driver.get(url)</span><br><span class="line">            time.sleep(<span class="number">1</span>)</span><br><span class="line">            data = driver.page_source</span><br><span class="line">            driver.close()</span><br><span class="line">            <span class="comment"># 创建响应对象</span></span><br><span class="line">            res = HtmlResponse(url=url, body=data, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'list.html'</span> <span class="keyword">in</span> url:</span><br><span class="line">            option = webdriver.ChromeOptions()</span><br><span class="line">            option.add_argument(<span class="string">'--headless'</span>)</span><br><span class="line">            option.add_argument(<span class="string">'--disable-gpu'</span>)</span><br><span class="line">            driver = webdriver.Chrome(chrome_options=option)</span><br><span class="line">            driver.get(url)</span><br><span class="line">            time.sleep(<span class="number">1</span>)</span><br><span class="line">            driver.execute_script(<span class="string">'window.scrollBy(0,10000)'</span>)</span><br><span class="line">            time.sleep(<span class="number">2</span>)</span><br><span class="line">            data = driver.page_source</span><br><span class="line">            driver.close()</span><br><span class="line">            <span class="comment"># 创建响应对象</span></span><br><span class="line">            res = HtmlResponse(url=url, body=data, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">            <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+
+<p>步骤2 修改为分布式爬虫</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> JD.items <span class="keyword">import</span> JdItem</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="comment"># 1 导入分布式爬虫类</span></span><br><span class="line"><span class="keyword">from</span> scrapy_redis.spiders <span class="keyword">import</span> RedisSpider</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2 继承分布式爬虫类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BookSpider</span><span class="params">(RedisSpider)</span>:</span></span><br><span class="line">    name = <span class="string">'book'</span></span><br><span class="line">    <span class="comment"># 3 注销</span></span><br><span class="line">    <span class="comment"># allowed_domains = ['jd.com']</span></span><br><span class="line">    <span class="comment"># start_urls = ['https://book.jd.com/booksort.html']</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 4 设置redis-key</span></span><br><span class="line">    redis_key = <span class="string">'pyhtml'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 5 设置__init__</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">        domain = kwargs.pop(<span class="string">'domain'</span>, <span class="string">''</span>)</span><br><span class="line">        self.allowed_domains = list(filter(<span class="literal">None</span>, domain.split(<span class="string">','</span>)))</span><br><span class="line">        super(BookSpider, self).__init__(*args, **kwargs)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(self, response)</span>:</span></span><br><span class="line">        <span class="comment"># 获取所有图书大分类节点列表</span></span><br><span class="line">        big_node_list = response.xpath(<span class="string">'//*[@id="booksort"]/div[2]/dl/dt/a'</span>)</span><br><span class="line">        <span class="keyword">for</span> big_node <span class="keyword">in</span> big_node_list[:<span class="number">1</span>]:</span><br><span class="line">            big_category = big_node.xpath(<span class="string">'./text()'</span>).extract_first()</span><br><span class="line">            big_category_link = response.urljoin(big_node.xpath(<span class="string">'./@href'</span>).extract_first())</span><br><span class="line">            <span class="comment"># 获取小分类节点列表</span></span><br><span class="line">            small_node_list = big_node.xpath(<span class="string">'../following-sibling::dd[1]/em/a'</span>)</span><br><span class="line">            <span class="keyword">for</span> small_node <span class="keyword">in</span> small_node_list:</span><br><span class="line">                temp = &#123;&#125;</span><br><span class="line">                temp[<span class="string">'big_category'</span>] = big_category</span><br><span class="line">                temp[<span class="string">'big_category_link'</span>] = big_category_link</span><br><span class="line">                temp[<span class="string">'small_category'</span>] = small_node.xpath(<span class="string">'./text()'</span>).extract_first()</span><br><span class="line">                temp[<span class="string">'small_category_link'</span>] = response.urljoin(small_node.xpath(<span class="string">'./@href'</span>).extract_first())</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 点击小分类连接</span></span><br><span class="line">                headers = &#123;</span><br><span class="line">                    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'</span></span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">yield</span> scrapy.Request(</span><br><span class="line">                    url=temp[<span class="string">'small_category_link'</span>],</span><br><span class="line">                    headers=headers,</span><br><span class="line">                    callback=self.parse_book_list,</span><br><span class="line">                    meta=&#123;<span class="string">'py'</span>: temp&#125;,</span><br><span class="line">                    dont_filter=<span class="literal">True</span></span><br><span class="line">                )</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse_book_list</span><span class="params">(self, response)</span>:</span></span><br><span class="line">        temp = response.meta[<span class="string">'py'</span>]</span><br><span class="line">        book_list = response.xpath(<span class="string">'//*[@id="J_goodsList"]/ul/li/div'</span>)</span><br><span class="line">        <span class="keyword">for</span> book <span class="keyword">in</span> book_list:</span><br><span class="line">            item = JdItem()</span><br><span class="line">            <span class="keyword">if</span> book.xpath(<span class="string">'./div[4]/span[1]/a/text()'</span>).extract_first() <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            item[<span class="string">'big_category'</span>] = temp[<span class="string">'big_category'</span>]</span><br><span class="line">            item[<span class="string">'big_category_link'</span>] = temp[<span class="string">'big_category_link'</span>]</span><br><span class="line">            item[<span class="string">'small_category'</span>] = temp[<span class="string">'small_category'</span>]</span><br><span class="line">            item[<span class="string">'small_category_link'</span>] = temp[<span class="string">'small_category_link'</span>]</span><br><span class="line">            item[<span class="string">'book_name'</span>] = book.xpath(<span class="string">'./div[3]/a/em/text()'</span>).extract_first()</span><br><span class="line">            item[<span class="string">'author'</span>] = book.xpath(<span class="string">'./div[4]/span[1]/a/text()'</span>).extract_first()</span><br><span class="line">            item[<span class="string">'link'</span>] = response.urljoin(book.xpath(<span class="string">'./div[3]/a/@href'</span>).extract_first())</span><br><span class="line">            item[<span class="string">'price'</span>] = book.xpath(<span class="string">'./div[2]/strong/i/text()'</span>).extract_first()</span><br><span class="line">            item[<span class="string">'book_id'</span>] = book.xpath(<span class="string">'./../@data-sku'</span>).extract_first()</span><br><span class="line">            <span class="keyword">yield</span> item</span><br><span class="line">        <span class="comment"># 翻页</span></span><br><span class="line">        next = response.xpath(<span class="string">'//*[@id="J_bottomPage"]/span[1]/a[9]/@onclick'</span>).extract_first()</span><br><span class="line">        <span class="keyword">if</span> next != <span class="literal">None</span>:</span><br><span class="line">            result = re.search(<span class="string">r'[0-9]+'</span>, next)</span><br><span class="line">            next_url = temp[<span class="string">'small_category_link'</span>] + <span class="string">'?page='</span> + result.group()</span><br><span class="line">            print(next_url)</span><br><span class="line"></span><br><span class="line">            headers = &#123;</span><br><span class="line">                <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">yield</span> scrapy.Request(</span><br><span class="line">                url=next_url,</span><br><span class="line">                headers=headers,</span><br><span class="line">                callback=self.parse_book_list,</span><br><span class="line">                meta=&#123;<span class="string">'py'</span>: temp&#125;,</span><br><span class="line">                dont_filter=<span class="literal">True</span></span><br><span class="line">            )</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Define here the models for your spider middleware</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># See documentation in:</span></span><br><span class="line"><span class="comment"># https://docs.scrapy.org/en/latest/topics/spider-middleware.html</span></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> scrapy.http <span class="keyword">import</span> HtmlResponse</span><br><span class="line"><span class="keyword">from</span> scrapy <span class="keyword">import</span> signals</span><br><span class="line"></span><br><span class="line"><span class="comment"># useful for handling different item types with a single interface</span></span><br><span class="line"><span class="keyword">from</span> itemadapter <span class="keyword">import</span> is_item, ItemAdapter</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SeleniumMiddleware</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">process_request</span><span class="params">(self, request, spider)</span>:</span></span><br><span class="line">        url = request.url</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'booksort'</span> <span class="keyword">in</span> url:</span><br><span class="line">            option = webdriver.ChromeOptions()</span><br><span class="line">            option.add_argument(<span class="string">'--headless'</span>)</span><br><span class="line">            option.add_argument(<span class="string">'--disable-gpu'</span>)</span><br><span class="line">            driver = webdriver.Chrome(chrome_options=option)</span><br><span class="line">            driver.get(url)</span><br><span class="line">            time.sleep(<span class="number">1</span>)</span><br><span class="line">            data = driver.page_source</span><br><span class="line">            driver.close()</span><br><span class="line">            <span class="comment"># 创建响应对象</span></span><br><span class="line">            res = HtmlResponse(url=url, body=data, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">            <span class="keyword">return</span> res</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'list.html'</span> <span class="keyword">in</span> url:</span><br><span class="line">            option = webdriver.ChromeOptions()</span><br><span class="line">            option.add_argument(<span class="string">'--headless'</span>)</span><br><span class="line">            option.add_argument(<span class="string">'--disable-gpu'</span>)</span><br><span class="line">            driver = webdriver.Chrome(chrome_options=option)</span><br><span class="line">            driver.get(url)</span><br><span class="line">            time.sleep(<span class="number">1</span>)</span><br><span class="line">            driver.execute_script(<span class="string">'window.scrollBy(0,10000)'</span>)</span><br><span class="line">            time.sleep(<span class="number">2</span>)</span><br><span class="line">            data = driver.page_source</span><br><span class="line">            driver.close()</span><br><span class="line">            <span class="comment"># 创建响应对象</span></span><br><span class="line">            res = HtmlResponse(url=url, body=data, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line">            <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Define your item pipelines here</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Don't forget to add your pipeline to the ITEM_PIPELINES setting</span></span><br><span class="line"><span class="comment"># See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># useful for handling different item types with a single interface</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> itemadapter <span class="keyword">import</span> ItemAdapter</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JdPipeline</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">open_spider</span><span class="params">(self, spider)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> spider.name == <span class="string">'book'</span>:</span><br><span class="line">            self.file = open(<span class="string">'book_list.json'</span>, <span class="string">'a'</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">process_item</span><span class="params">(self, item, spider)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> spider.name == <span class="string">'book'</span>:</span><br><span class="line">            item = dict(item)</span><br><span class="line">            str_data = json.dumps(item, ensure_ascii=<span class="literal">False</span>)</span><br><span class="line">            self.file.write(str_data + <span class="string">',\n'</span>)</span><br><span class="line">        <span class="keyword">return</span> item</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">close_spider</span><span class="params">(self, spider)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> spider.name == <span class="string">'book'</span>:</span><br><span class="line">            self.file.close()</span><br></pre></td></tr></table></figure>
+
+<p><span id="4">杂项</span></p>
+<p>1 scrapyd 项目管理，日志信息详情</p>
+<p>2 appnium安装</p>
+<p>   node.js安装，jdk安装</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2021-12-29T13:18:32.654Z" itemprop="dateUpdated">2021-12-29 21:18:32</time>
+</span><br>
+
+
+        
+        本文永久链接：<a href="/my-blog/posts/c27b0f13.html" target="_blank" rel="external">https://nari2021.github.io/my-blog/posts/c27b0f13.html</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://nari2021.github.io/my-blog">
+            <img src="/my-blog/img/ressapannda.gif" alt="なりたぁん">
+            なりたぁん
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/my-blog/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/c27b0f13.html&title=《Python爬虫学习笔记-4》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/c27b0f13.html&title=《Python爬虫学习笔记-4》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/c27b0f13.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python爬虫学习笔记-4》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/c27b0f13.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/c27b0f13.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/my-blog/posts/2d0e6395.html" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">爬虫逆向学习笔记-1</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/my-blog/posts/5c1f9ab0.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python爬虫学习笔记-3</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "CbPotriRy5GHii9V5fWXjhcB-MdYXbMMI",
+            appKey: "0Q07HYS8853MtyGeEIIps7Sn",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        要恰饭的嘛，呜呜
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/my-blog/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/my-blog/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>なりたぁん &copy; 2020 - 2021</span>
+            <span>
+                
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nari2021.github.io/my-blog/posts/c27b0f13.html&title=《Python爬虫学习笔记-4》 — ナリのブログへようこそ&pic=https://nari2021.github.io/my-blog/img/ressapannda.gif" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nari2021.github.io/my-blog/posts/c27b0f13.html&title=《Python爬虫学习笔记-4》 — ナリのブログへようこそ&source=なりと申します・よろしくお願いします" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nari2021.github.io/my-blog/posts/c27b0f13.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Python爬虫学习笔记-4》 — ナリのブログへようこそ&url=https://nari2021.github.io/my-blog/posts/c27b0f13.html&via=https://nari2021.github.io/my-blog" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nari2021.github.io/my-blog/posts/c27b0f13.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nari2021.github.io/my-blog/posts/c27b0f13.html" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/my-blog/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '(つェ⊂)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
